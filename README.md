@@ -69,10 +69,3 @@
 | OISD Basic | dns | [原始链接](https://abp.oisd.nl/basic/) | [加速链接1](https://gcore.jsdelivr.net/gh/qiuxiuya/adblockfilters@main/rules/OISD_Basic.txt) | [加速链接2](https://github.boki.moe/https://raw.githubusercontent.com/qiuxiuya/adblockfilters/main/rules/OISD_Basic.txt) | [加速链接3](https://ghfast.top/https://raw.githubusercontent.com/qiuxiuya/adblockfilters/main/rules/OISD_Basic.txt) | 2025/07/16 |
 | StevenBlack hosts | host | [原始链接](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) | [加速链接1](https://gcore.jsdelivr.net/gh/qiuxiuya/adblockfilters@main/rules/StevenBlack_hosts.txt) | [加速链接2](https://github.boki.moe/https://raw.githubusercontent.com/qiuxiuya/adblockfilters/main/rules/StevenBlack_hosts.txt) | [加速链接3](https://ghfast.top/https://raw.githubusercontent.com/qiuxiuya/adblockfilters/main/rules/StevenBlack_hosts.txt) | 2025/07/14 |
 | Pollock hosts | host | [原始链接](https://someonewhocares.org/hosts/hosts) | [加速链接1](https://gcore.jsdelivr.net/gh/qiuxiuya/adblockfilters@main/rules/Pollock_hosts.txt) | [加速链接2](https://github.boki.moe/https://raw.githubusercontent.com/qiuxiuya/adblockfilters/main/rules/Pollock_hosts.txt) | [加速链接3](https://ghfast.top/https://raw.githubusercontent.com/qiuxiuya/adblockfilters/main/rules/Pollock_hosts.txt) | 2025/07/01 |
-
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=qiuxiuya/adblockfilters&type=Date)](https://star-history.com/#qiuxiuya/adblockfilters&Date)
-
-## 以下是广告
-感兴趣的可以看下，DartNode 免费 VPS, [点击申请](https://dartnode.com?aff=PudgyBurrito637)
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
