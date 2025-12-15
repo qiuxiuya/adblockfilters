@@ -35,7 +35,7 @@ class RefreshCDN(object):
     async def __refresh(self, fileName):
         try:
             async with httpx.AsyncClient() as client:
-                response = await client.get("https://purge.jsdelivr.net/gh/217heidai/adblockfilters@main/rules/%s"%(fileName))
+                response = await client.get("https://purge.jsdelivr.net/gh/qiuxiuya/adblockfilters@main/rules/%s"%(fileName))
                 response.raise_for_status()
                 status = response.json().get("status", "")
                 logger.info(f'%s refresh status: %s' % (fileName, status))
