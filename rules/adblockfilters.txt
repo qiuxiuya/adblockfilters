@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251224002255
-! Last modified: 2025/12/24 00:22:55
-! Blocked Filters: 93341
+! Version: 20251224091856
+! Last modified: 2025/12/24 09:18:56
+! Blocked Filters: 93343
 !
 ###AC_ad
 ###AD_160
@@ -15560,6 +15560,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 *.gif^$domain=weimanga.com
 *.lijie.*/*_*?$third-party
 */blsx_*_*_*?*$third-party
+*/tags/*akira.js$domain=akirabox.to
 *ad.durasite.net^
 *bet*.jpg$domain=037hdmovie.com,~third-party
 -*-*-*-*.alpha^$script,third-party
@@ -46152,6 +46153,7 @@ foodnetwork.com##[data-slot-type="ad_aside_top"]
 foodnetwork.com#$#body[style^="margin-top: 90px;"] { margin-top: 0!important; }
 foodrenegade.com##.top-cta
 foodsforbetterhealth.com###text-46
+foodtechnos.in#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'window.open')
 fool.com###articles-incontent2
 fool.com###articles-top
 fool.com##.promobox-container
@@ -47510,9 +47512,11 @@ gameskinny.com##div[id^="div-sjr-"]
 gameslay.net##a[rel="noreferrer nofollow"] > img
 gameslol.net##.pubGside
 gameslol.net,yabiladi.com##.pub_header
+gamesmain.xyz#%#//scriptlet('prevent-addEventListener', 'click', 'location.href', 'elements', '#link-ready')
+gamesmain.xyz#%#//scriptlet('prevent-setTimeout', 'window.location.href')
 gamesmain.xyz,foodtechnos.in###adblock-modal
-gamesmain.xyz,foodtechnos.in#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'window.open')
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
+gamesmain.xyz,foodtechnos.in#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
 gamesmain.xyz,foodtechnos.in#%#//scriptlet('set-constant', 'adsbygoogle', 'emptyObj')
 gamesmarket.global##.MuiBox-root > .MuiBox-root:has(> .adSlot)
 gamesofdesire.com###chat
@@ -51948,10 +51952,6 @@ insomnia.gr,kingsinteriors.co.uk,w3e.kanazawa-it.ac.jp#@#.adlink
 inspire.com#$##unav-desktop-header { top: 0px !important; }
 insta-stories-viewer.com##.context
 insta-stories-viewer.com#?#.context__caption > .context__title:contains(/^Advertising$/)
-instacart.ca,instacart.com###store-wrapper img[alt^="• Sponsored:"]
-instacart.ca,instacart.com#?##store-wrapper div.e-ijs5rh
-instacart.ca,instacart.com#?##store-wrapper div[class] > ul li:has(div[aria-label="Product"] div[data-sssp-eligible])
-instacart.ca,instacart.com#?##store-wrapper div[class] > ul li:has(div[aria-label="Product"]:has(img[alt="Sponsored"]))
 instacart.com##.image-banner-a-9l2sjs
 instacart.com##.image-banner-a-ak0wn
 instacart.com##.shoppable-list-a-las2t7
@@ -77477,10 +77477,12 @@ zobacz.ws#%#//scriptlet("abort-on-property-read", "mdpDeBlocker")
 zoechip.com##.block_area > div[style^="width: 100%;"]
 zol.com.cn###Article_Top_Banner
 zol.com.cn###btmLoginLayer
+zol.com.cn###downBoxGaosu
 zol.com.cn###downBoxGaosu + a
 zol.com.cn###iframe_zmall
 zol.com.cn###official_url
 zol.com.cn###relatedProduct
+zol.com.cn###sideDoubao
 zol.com.cn##.down-append-mol__pic
 zol.com.cn##.local-spe-bottom
 zol.com.cn##.pv-mol_ask
@@ -80865,6 +80867,7 @@ zzzyk.com###Tinfo
 ||cdn.jsdelivr.net/gh/tknobloog/nossir98@master/adblock/adblock%2B.js
 ||cdn.jsdelivr.net/gh/vli-platform/adb-analytics@*/v1.0.min.js
 ||cdn.jsdelivr.net/gh/vli-platform/adb-analytics@a6f3a45/v1.0.min.js
+||cdn.jsdelivr.net/gh/willthequeencome/adcsh/june.js
 ||cdn.jsdelivr.net/npm/@adshield/
 ||cdn.jsdelivr.net/npm/@fancyapps/$domain=hcbdsm.com
 ||cdn.jsdelivr.net/npm/ima-ad-player
@@ -82143,7 +82146,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eavesofefinegoldf.info^$popup
 ||ebay.com/delstats/
