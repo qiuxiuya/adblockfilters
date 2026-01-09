@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260109162558
-! Last modified: 2026/01/09 16:25:58
-! Blocked Filters: 97902
+! Version: 20260110002304
+! Last modified: 2026/01/10 00:23:04
+! Blocked Filters: 97901
 !
 ###AC_ad
 ###AD_160
@@ -15153,12 +15153,10 @@
 ##div[id^="img_"][ontouchend$="touchEnd(event)"]
 ##div[id^="img_"][ontouchstart][style$="z-index:1;"]
 ##div[id^="img_"][role="button"]
-##div[id^="img_"][style$="display: block;"]
 ##div[id^="img_"][style$="height: 248px; overflow: hidden;"]
 ##div[id^="img_"][style$="height:100px;"]
 ##div[id^="img_"][style$="height:90px;overflow:hidden;"]
 ##div[id^="img_"][style$="justify-content: center; align-items: center; position: relative;"]
-##div[id^="img_"][style$="max-height:100px;background-color:rgba(128, 128, 128, 0.4);"]
 ##div[id^="img_"][style$="overflow:hidden; display:inline-block;"]
 ##div[id^="img_"][style$="padding: 0px; display: inline-block;"]
 ##div[id^="img_"][style$="position: sticky; top: 0; z-index: 1;"]
@@ -15178,7 +15176,6 @@
 ##div[id^="img_"][style^="display: flex; justify-content: center; align-items: center; width: 300px;"]
 ##div[id^="img_"][style^="height: 250px; width: 300px;"]
 ##div[id^="img_"][style^="margin: 0px; padding: 0px; position: fixed; top: 0px; left: 0px; width: 100%; z-index: 2147483647;"]
-##div[id^="img_"][style^="margin:0;padding:0;display:block;position:fixed;left:0;"]
 ##div[id^="img_"][style^="overflow: hidden; width: 320px;"]
 ##div[id^="img_"][style^="position: fixed; bottom: 0; left: 0; width: 100%; z-index:2147483647;"]
 ##div[id^="img_"][style^="position: fixed; bottom: 0px; left: 0px; width: 100%; z-index: 2147483647;"]
@@ -15715,7 +15712,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 -universal-analytics/
 -web-advert-$image
 -wrapper-analytics-prod.cloudfunctions.net/
-.*.*.com/papi/$third-party
 .012*sop.xyz/$script,xmlhttprequest,third-party
 .1.1.1.l80.js^
 .1.1.1.l80.js^$third-party
@@ -15960,13 +15956,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/myjs/alljs.js
 .com/myjs/mys_alljs.js
 .com/on.js$third-party
-.com/papi/*/327/
-.com/papi/*/456/
 .com/pc/ad/
 .com/piaozi/*.js
-.com/players/*/-1/$script,third-party
-.com/players/*/-1/70/$script,third-party
-.com/players/*/-1/70/$xmlhttprequest
 .com/playlist?list=$jsonprune=\$..[adPlacements\, adSlots\, playerAds],domain=youtubekids.com|youtube-nocookie.com|youtube.com
 .com/pu/$script,domain=smutr.com
 .com/qq.js$third-party
@@ -16078,6 +16069,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .exponea.com/*/open$image
 .facebook.com/tr/$image
 .facebook.com/tr?$image
+.fb2.html-load.com/player/
 .fiverr.com/js_event_tracking/v1/track_email_open/$image
 .flipboard.com/usage?
 .fun/*.jss?17*&r=0$third-party
@@ -16116,8 +16108,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .hh0*aoik.com/$script,xmlhttprequest,third-party
 .hilton.com/subscription/watermark.gif?
 .hootsuite.com/trk?
-.html-load.com/papi/$image,stylesheet,script,subdocument,xmlhttprequest
-.html-load.com/player/$script,stylesheet,subdocument,xmlhttprequest
+.html-load.com/*/d/
+.html-load.com/*/n/
 .html?android=hx*&_$csp=script-src
 .html?clicktag=
 .html|$domain=www.gamer.com.tw
@@ -22140,7 +22132,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 07073.com###rightDiv > div[style="height:250px"]
 07073.com###tanchuang
 07073.com##.No1
-07c225f3.online,content-loader.com,css-load.com,html-load.com,img-load.com#$?#html:not(:has(> head > style:only-child:contains(width:399px;height:411px))) { filter: opacity(0) !important; pointer-events: none !important; }
 089u.com#%#//scriptlet('prevent-window-open', 'popjump', '1')
 0du123.com,100ec.cn,24en.com,3gsc.com.cn,591hx.com,acgnx.net,acgnx.se,aguitar.cn,btzx2017.com,e0514.com,eastmoney.com,guitarchina.com,gz0668.com,hk.on.cc,iguaji.com,iqiyi.com,jia360.com,jojf.cn,junk-call.com,kdnet.net,kumi.cn,netbian.com,qiuziti.com,rain2.top,solarbe.com,tiboo.cn,v2rayssr.com,woniuyulew.com,xingkbjm.com,zyue.com##.banner
 0gomovie.tv###servers-list > a[target="_blank"] > img
@@ -24168,6 +24159,9 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 :8891/v*$third-party
 :8891/v*/$script,third-party
 :8898/ads_
+:900*/d/*n=$script,third-party
+:900*/d/*t=$script,third-party
+:900*/sc/*n=$script,third-party
 :9001/code/
 :9875/vh2/
 :9875/vj2/
@@ -24303,8 +24297,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@.gif$xmlhttprequest,stealth=referrer,domain=megaup.site
 @@.google-analytics.com%2Fanalytics.js$domain=free.com.tw
 @@.html$xmlhttprequest,subdocument,stealth=referrer,domain=edgedeliverynetwork.com
-@@.html-load.com/papi/*/70/$image,script,subdocument,xmlhttprequest
-@@.html-load.com/player/*/70/$script,subdocument,xmlhttprequest
 @@.instantservice.com$document
 @@.jpg#$domain=huhupan.com
 @@.jpg#$domain=ktmx.pro
@@ -35047,6 +35039,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||zinro.net/m/log.php
 @@||ziperto.com^$generichide
 @@||zipraw.com^$generichide
+@@||zirvedesin120.cfd/yayinzirve.m3u8$stealth=referrer
 @@||zive.cz/Client.Scripts/advertisment.js
 @@||zjjcxy.cn^*/ad.css?$stylesheet
 @@||zlavomat.sk/akcia^
@@ -42622,6 +42615,7 @@ consumerist.com#@#.after-post-ad
 consumerreports.org##.monetate_selectorHTML_48e69fae
 contactform7.com##.cf7com-bsa-zone
 contactform7.com,ducumon.click###custom_html-5
+content-loader.com,css-load.com,html-load.com,img-load.com#$?#html:not(:has(> head > style:only-child:contains(width:399px;height:411px))) { filter: opacity(0) !important; pointer-events: none !important; }
 content.techgig.com##.first-arti-banner
 content.techgig.com##.gutter-banner
 content.techgig.com##.main-content-polls
@@ -50039,6 +50033,8 @@ geniuskitchen.com##.smart-card-wrap > div.smart-aside
 genmirror.com##.container div[style="height:200px;width:100%;"]
 genmirror.com##.container div[style="height:280px;width:100%;"]
 genova24.it#%#//scriptlet("set-constant", "checkForAdBlocker", "noopFunc")
+genshin-center.com##div[class^="units_lb1Wrapper_"]
+genshin-center.com##div[class^="units_mpuWrapper_"]
 genshin-impact-map.appsample.com###pc-br-300x250-gim
 genshin-impact-map.appsample.com###pc-br1-float-gim
 genshin.gg##.wrapper-lb1
@@ -64150,6 +64146,7 @@ pcgamesn.com,pockettactics.com##.inlinerail
 pcgamesn.com,wargamer.com##.ad-injector-potential-slot
 pcgamesn.com,wargamer.com##.sn-placement
 pcgamesn.com,wargamer.com##.snigel_ad
+pcgamesn.com,wargamer.com##body .sn-placement:not(#style_important)
 pcgamestorrents.*,igg-games.*###tm-sidebar div > a[aria-label] > img
 pcgamestorrents.*,igg-games.*###tm-sidebar div > a[href] > img
 pcgamestorrents.*,igg-games.*###tm-sidebar div > a[target="_blank"] > img
@@ -67186,6 +67183,8 @@ rabbitstream.net###overlay-container
 rabble.ca##.grey-cta-block
 racedepartment.com#%#//scriptlet("abort-current-inline-script", "$", "adsBlocked")
 racefans.net##.text-above-ad
+racer.com##.MuiStack-root:has(> sellwild-widget:only-child)
+racer.com##div[class^="MuiBox-root"]:has(> div[class^="MuiBox-root"]:first-child + div[class^="MuiBox-root"]:last-child > div.MuiBox-root[id^="10"])
 racerxonline.com##.interstitial
 racgp.org.au##.mb-1.small
 rachidscience.com,novelasesp.blogspot.com###HTML2
@@ -75131,8 +75130,6 @@ truckinginfo.com##.incontent02Ad
 trucknetuk.com###sidebarright
 trueachievements.com###sidebar > .side-unit
 trueachievements.com###topad-wrap
-trueachievements.com##.dyn-lb
-trueachievements.com##.pw_player_w
 trueachievements.com##.vr-auction
 trueachievements.com,ign.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "isIframeNetworking")
 trueachievements.com,pockettactics.com$$script[tag-content="={""isIframeNetworking"":false,""mappings"":[{""selector"":""link[href*="][max-length="15000"]
@@ -75151,6 +75148,8 @@ truecar.com##ul > li[class^="order-"][class*="empty:hidden"]
 truecar.com##ul > li[style^="order"][class*="empty:hidden"]
 trueid.net##div[data-testid="adsComponent-div"]
 truepeoplesearch.com##.card > div:has(div.h5 > span[style="padding-bottom:5px;margin-top:-10px;font-size:.8rem;"])
+truetrophies.com,trueachievements.com##.dyn-lb
+truetrophies.com,trueachievements.com##.pw_player_w
 truetrophies.com,trueachievements.com#$#.nav-gamer.open { top: 0 !important; }
 truetrophies.com,trueachievements.com#$#body { padding-top: 0 !important; }
 truetrophies.com,trueachievements.com,pockettactics.com,pcgamesn.com###nn_bfa_wrapper
@@ -80939,7 +80938,6 @@ zzzyk.com###Tinfo
 ||0722fc.com/index/tools/js.php
 ||073img.com/*/|
 ||0755rc.com^$third-party
-||07c225f3.online/loader.min.js$replace=/;(const .=new Blob\(\[.\])/;return;\$1/,domain=etoday.co.kr
 ||07c225f3.online^$document,popup
 ||07c225f3.online^$popup
 ||0gomovies-official.site/jss/dectector-2025.js
@@ -85233,7 +85231,6 @@ zzzyk.com###Tinfo
 ||d-1.co^$third-party
 ||d-pa.ppstatic.pl/frames/$image,badfilter
 ||d.line-scdn.net/*/torimochi.js/*/torimochi.js$script,redirect=googletagservices-gpt,domain=line.me
-||d.rcmd.jp^$image
 ||d1.yingyongge.com/production/*/production/ihth.js
 ||d1.yingyongge.com/qmoshe.js
 ||d1bz.xyz/static/book/static.
@@ -85886,10 +85883,6 @@ zzzyk.com###Tinfo
 ||dykshao.cn/image/$third-party
 ||dyktanda.pl/static/js/main.*.chunk.js$replace=/src:"https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js"/src:"\/"/
 ||dymmt.com/skin/mzitu/js/foot.
-||dynacrems.wp.pl/ad/
-||dynacrems.wp.pl/ad/$replace=/.+//,important
-||dynacrems.wp.pl/script/?id=*&placement_id=$replace=/.+//,important
-||dynacrems.wp.pl/staticad/$replace=/.+//,important
 ||dynamic-manifest.hulustream.com/hulu*playlist.m3u8$replace=/#EXT-X-DATERANGE:ID=".*?ad".*?\n[\s\S]*?(?=#EXT-X-DATERANGE:ID=)//,domain=hulu.com
 ||dynamicyield.com/batch?
 ||dynamicyield.com/clog
@@ -92099,7 +92092,6 @@ zzzyk.com###Tinfo
 ||pimpandhost.com^$subdocument
 ||ping*.qq.com^
 ||ping-admin.ru^$third-party
-||ping-fast.com^$third-party
 ||ping0.cc/static/images/ad/
 ||pinggu.org/api/bbsgg.
 ||pingil.com^$third-party
@@ -97799,7 +97791,6 @@ zzzyk.com###Tinfo
 ||zol.com/index.php?c=ZolShopIndex
 ||zona.plus/*.php|
 ||zone-telechargement.al/analytics/
-||zone.msn.com^$replace=/"adsFree\\":false/"adsFree\\":true/,document
 ||zone.msn.com^$replace=/"preroll\\":true/"preroll\\":false/,document
 ||zoneadsl.com/api/get-ip
 ||zongheng.com/upload/hzds/
@@ -97868,10 +97859,18 @@ zzzyk.com###Tinfo
 ~cityheaven.net###gg1
 ~daquandy.com##.m_acmsd
 ~daquandy.com##.pc_acmsd
-~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://07c225f3.online/player"]
 ~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://content-loader.com/player"]
 ~dogdrip.net,~smsonline.cloud##*:not(body) > a[href^="https://html-load.com/player"]
+~dogdrip.net,~smsonline.cloud##amp-img[height="   120"]
+~dogdrip.net,~smsonline.cloud##amp-img[width="   300"]
+~dogdrip.net,~smsonline.cloud##amp-img[width="   336"]
+~dogdrip.net,~smsonline.cloud##div[id^="img_"][data-google-query-id]
+~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="2147483647; justify-content: center;"]
+~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="display: block;"]
+~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="height: 90px;"]
+~dogdrip.net,~smsonline.cloud##div[id^="img_"][style$="max-height:100px;background-color:rgba(128, 128, 128, 0.4);"]
 ~dogdrip.net,~smsonline.cloud##div[id^="img_"][style="min-width: 300px; min-height: 250px;"]
+~dogdrip.net,~smsonline.cloud##div[id^="img_"][style^="margin:0;padding:0;display:block;position:fixed;left:0;"]
 ~dogdrip.net,~smsonline.cloud##div[style^="height:    250px; width:    300px;"]
 ~dogdrip.net,~smsonline.cloud##div[style^="width:    160px; height:    600px; margin: 0px auto; min-width: 160px; min-height: 600px;"]
 ~dogdrip.net,~smsonline.cloud##div[style^="width:    300px; height:    250px;"]
