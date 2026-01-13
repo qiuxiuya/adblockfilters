@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260113002340
-! Last modified: 2026/01/13 00:23:40
-! Blocked Filters: 98510
+! Version: 20260113091850
+! Last modified: 2026/01/13 09:18:50
+! Blocked Filters: 98511
 !
 ###AC_ad
 ###AD_160
@@ -26607,6 +26607,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||cdn.jsdelivr.net/combine/npm/bootstrap*/dist/js/bootstrap.min.js$domain=strikeout.nu
 @@||cdn.jsdelivr.net/combine/npm/jquery
 @@||cdn.jsdelivr.net/gh/imediacdn/wp-plugins@main/imedia-basic/doubleserve.js$domain=sgxnifty.org
+@@||cdn.jsdelivr.net/gh/itspro-dev/project_files@master/publicearn2.js$domain=bhadohimusic.in.net|usanowday.com|fullformsmarathi.in
 @@||cdn.jsdelivr.net/gh/njentit/testads/ads.js
 @@||cdn.jsdelivr.net/gh/video-dev^
 @@||cdn.jsdelivr.net/gh/vli-platform/adb-analytics@*.min.js$domain=orbispatches.com
@@ -45557,7 +45558,6 @@ educity.cn##.content_relate:nth-child(5)
 edufever.com##.inside-right-sidebar > aside[id="block-5"]
 edukacjakrytyczna.pl##a[href^="/przekierowanie/"] > img[alt="banner"]
 edukacjakrytyczna.pl#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
-edukaroo.com#%#//scriptlet('trusted-set-local-storage-item', 'firstClickTimestamp', '2747158774108')
 edukaroo.com,shortix.co,forex.soft3arbi.com,fxmag.com###popup
 edumail.icu##a[title="ShockVPN"]
 edumail.icu#%#//scriptlet('remove-node-text', 'script', 'enable_ad_block_detector')
@@ -48915,6 +48915,8 @@ fullboys.com#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.goo
 fullboys.com#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{document.addEventListener("DOMContentLoaded",(()=>{"function"==typeof getfull&&getfull()}));})();')
 fullboys.com#%#//scriptlet('trusted-replace-node-text', 'script', 'full-video', '/timefull == \d/', 'true')
 fullboys.com#%#//scriptlet('trusted-replace-node-text', 'script', 'full-video', 'timeLeftfull > 0', 'false')
+fullformsmarathi.in,usanowday.com,bhadohimusic.in.net,edukaroo.com#%#//scriptlet('trusted-set-local-storage-item', 'firstClickTimestamp', '2747158774108')
+fullformsmarathi.in,usanowday.com,bhadohimusic.in.net,itijobalert.in,edukaroo.com##div[id*="-Ads"]
 fullhyderabad.com#?#.fh_left > div[class] > div[class]:only-child:contains(/^ADVERTISEMENT$/)
 fullmatch.info###background-stream-cover
 fullmatch.info##[class*="wp-image"]
@@ -50470,6 +50472,7 @@ goal.com##.aside_ad-rail__cawG6
 goal.com##.commercial
 goal.com##.component-ad
 goal.com##.component-promo-panels
+goal.com##.fco-fc-video-player
 goal.com##.fco-scoreboard__sponsorship
 goal.com##.fco-sticky-wrapper__space-placeholder
 goal.com##.molecule-ad
@@ -54951,7 +54954,6 @@ ithome.com.tw##.ad-text-in-middle
 ithome.com.tw##.span4:nth-child(5)
 ithome.com.tw##.span4:nth-child(8)
 ithome.com.tw##div[class="span4"]
-itijobalert.in,edukaroo.com##div[id*="-Ads"]
 itjsb.com##.info_ad
 itkeyword.com##p[style="line-height:1.4; margin-top:8px; margin-bottom:10px;"]
 itmo.com##.aside-game-icon-box
@@ -62158,7 +62160,6 @@ newatlas.com###native_index_desktop
 newatlas.com###native_index_desktop_1
 newatlas.com##.Page-above-content
 newatlas.com##.Page-aside
-newatlas.com#%#//scriptlet('abort-on-stack-trace', 'postMessage', 'onload')
 newatlas.com#%#//scriptlet('trusted-suppress-native-method', 'JSON.parse', '"html-load.com"')
 newatlas.com#?#.js-recommendations-inner > section:has(div[id*="taboola"])
 newatlas.com,neowin.net#%#//scriptlet('abort-current-inline-script', 'btoa', '/errorno|comoalmd-h\.lt|problem loading the page/')
