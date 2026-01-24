@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260124002534
-! Last modified: 2026/01/24 00:25:34
-! Blocked Filters: 99671
+! Version: 20260124092035
+! Last modified: 2026/01/24 09:20:35
+! Blocked Filters: 99672
 !
 ###AC_ad
 ###AD_160
@@ -33325,7 +33325,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||securitytrails.com/app/api/$domain=securitytrails.com
 @@||securitytrails.com/domain/$domain=securitytrails.com
 @@||seeitworks.com/advertisement.js
-@@||seelen.io/jquery.ad.js$domain=seelen.io
 @@||seg-cdn.pumpkin.care/analytics.js/$~third-party
 @@||seg-cdn.pumpkin.care/next-integrations/integrations/mixpanel/$domain=get.pumpkin.care
 @@||seguridad.compensar.com/lib/js/fingerprint2.js$~third-party
@@ -36045,6 +36044,8 @@ aeprofree.com##.adsbygoogle
 aeroexpo.online,agriexpo.online,directindustry.com,droidgamers.com,fonearena.com,frontlinesoffreedom.com,stakingrewards.com###header-banner
 aeromods.app#?#body > font[color="black"] > center:contains(/^Advertisements$/)
 aeromods.app#?#body > font[color="black"]:has(> center:contains(/^Advertisements$/)) + div + hr
+aerospacemanufacturinganddesign.com###inline-1
+aerospacemanufacturinganddesign.com##.CoverPop-close-go
 aerospacenotes.com,fromfahad.com##div[id][class^="popup"][class$="wrap"][style]
 aerospacenotes.com,fromfahad.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 aerotime.aero##.article-leaderboard
@@ -36243,6 +36244,8 @@ airevue.net,stfly.*#%#//scriptlet('abort-current-inline-script', 'document.creat
 airevue.net,veroan.com,amalot.net,carribo.net,stfly.biz,stfly.cc,bookbucketlyst.com#%#//scriptlet('abort-on-property-read', 'abwn')
 airfactsjournal.com###media_image-3
 airfactsjournal.com##.avia_image
+airlinegeeks.com##.ag-ads-target
+airlinegeeks.com,avweb.com,flyingmag.com,planeandpilotmag.com##.flyin-article-above-headline
 airmail.news##am-display[fetched="fetched"]
 airmail.news,govevents.com,protipster.com##.display
 airmore.com##.thead
@@ -38382,6 +38385,8 @@ aviationsourcenews.com##body div.mfp-wrap
 aviatorsmarket.com###zone324415992
 aviatorsmarket.com##.mrkting-wrapper
 avito.ru#@#[class$="-ads"]
+avitrader.com##.elementor-element-31aeedc
+avitrader.com,cnaw2news.com,iconeye.com,kdnuggets.com,manageditmag.co.uk,sportsspectrum.com,tampabayparenting.com##.a2t-link
 avjd014.com##a[href^="http://163qp.xyz"]
 avkuy.com##div[id^="ads_"]
 avmeme.com#?#.align-items-start > a[href="https://3dayseo.com"]:upward(1)
@@ -38410,6 +38415,7 @@ avtosfer.az##div[class^="bannerArea"]
 avtosfer.az##div[class^="top_banner_"]
 avtosfer.az##iframe[src^="http://avtosfer.az/banner"]
 avvocatoandreani.it#@#.AdSense
+avweb.com##.avweb-home-leader
 avxhm.se##[data-localize]:has(a[href^="https://canv.ai/"])
 avxhome.in##.banner-links
 avxhome.in##.news a[href^="https://goo.gl/"]
@@ -39443,6 +39449,7 @@ betarena.cz##div.bestBetBox
 betarena.cz#?##lightbox-search > div.boxBlock:has(> p > a[rel$="sponsored"])
 betarena.cz#?##lightbox-search > p:has(> strong > img[src^="/img/poker"])
 betaseries.com##.blockPartner
+betches.com##.mod-ad-htl
 betrugsalarm.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 betterbe.co##div[data-trackable-ad]
 bettycrocker.com##.recipeAd
@@ -42389,7 +42396,6 @@ cn.bing.com,cn.bing.net##.b_bza_pole
 cna.com.tw##.ad_336_2
 cna.com.tw#$#.fb_fanpage_inpage > .other_news_box_2 { padding: 0 0px!important; margin: 26px 0!important; }
 cna.com.tw,ettoday.net##.ad_970
-cnaw2news.com,iconeye.com,kdnuggets.com,manageditmag.co.uk,sportsspectrum.com,tampabayparenting.com##.a2t-link
 cnbc.com##.BoxRail-styles-makeit-ad--lyuQB
 cnbc.com##.TopBanner-container
 cnbc.com##div[class*="BoxRail-styles-makeit-ad--"][data-test^="adFlexBox-"]
@@ -65923,6 +65929,8 @@ plagiarismchecker.co##div[id^="io_ep"]
 plagiarismdetector.net#%#//scriptlet("prevent-setTimeout", "isAdBlockActive")
 plagiarismdetector.net#%#//scriptlet("set-constant", "google_jobrunner", "noopFunc")
 plagiarismtoday.com##.plagi-widget
+planeandpilotmag.com##.plane-article-above-headline
+planeandpilotmag.com##.plane-home-leader-before-content
 planefinder.net###map-ad-container
 planetagracza.pl##.ad__in
 planetagracza.pl##.discounts--partner
@@ -70130,13 +70138,6 @@ seeklogo.com##.pagePartnersWp
 seeklogo.com##.shutterBannerWp
 seeklogo.com##.sideAdsWp
 seeklogo.com##.sstkBannerWp
-seelen.io#$#.ant-modal-root { display: none !important; }
-seelen.io#$#body { overflow: auto !important; }
-seelen.io#%#(()=>{const t={apply:(t,n,o)=>{try{const t=n,e=o[0];if("{}"===t&&"google"===e)return!0}catch(t){}return Reflect.apply(t,n,o)}};window.String.prototype.includes=new Proxy(window.String.prototype.includes,t)})();
-seelen.io#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
-seelen.io#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
-seelen.io#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{const t={apply:(t,n,o)=>{try{const t=n,e=o[0];if("{}"===t&&"google"===e)return!0}catch(t){}return Reflect.apply(t,n,o)}};window.String.prototype.includes=new Proxy(window.String.prototype.includes,t)})();')
-seelen.io#?#body > #seelen-ad ~ div[style*="position: fixed;"][style*="z-index:"]:has(> div > div > div > span:contains(Ad Block Detected))
 seemysex.com##.inline-video-adv__inner
 seemysex.com##.rain
 seganerds.com###text-html-widget-13
