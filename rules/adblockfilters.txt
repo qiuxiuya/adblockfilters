@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260204163655
-! Last modified: 2026/02/04 16:36:55
-! Blocked Filters: 96376
+! Version: 20260205004226
+! Last modified: 2026/02/05 00:42:26
+! Blocked Filters: 96386
 !
 ###AC_ad
 ###AD_160
@@ -30234,6 +30234,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||looptorrent.net^$generichide
 @@||lootlinks.*/js/prebid-ads.js
 @@||lootup.me/assets/js/ads-prebid.js
+@@||lootup.me/assets/js/flashAd.js
 @@||lostpod.space/static/streaming-playlists/$domain=videos.john-livingston.fr
 @@||loucasporcabelos.com.br^$stealth=referrer
 @@||love-stoorey210.net^$generichide
@@ -39024,6 +39025,8 @@ bestbuy.com##div[id^="shop-display-ad-"]
 bestbuy.com##li.embedded-sponsored-listing
 bestbuy.com#?#.plp-ninja-carousel:-abp-contains(Sponsored)
 bestbuy.com#?#.plp-ninja-carousel:contains(Sponsored)
+bestbuy.com#?#div[data-testid="Row_testID"]:-abp-has(span:-abp-contains(Sponsored))
+bestbuy.com#?#div[data-testid="Row_testID"]:has(span:contains(Sponsored))
 bestcam.tv##.widget-banner
 bestcash2020.com#%#//scriptlet("prevent-window-open")
 bestcash2020.com#@#.banner-468x60
@@ -42015,6 +42018,7 @@ coincodex.com##.bottom9
 coincodex.com##.ldb-top2
 coincodex.com##.ldb-top6
 coincodex.com##.middle9
+coincodex.com##.no-transition.article-ogl
 coincodex.com##.side-col > div[style="text-align: center; position: relative;"]
 coincodex.com##.side-col div[class][style]:has(> a[target="_blank"] > img)
 coincodex.com##.sidebar-4skyscraper
@@ -56009,6 +56013,7 @@ kogan.com#?#.slider-slide:-abp-contains(Sponsored)
 kogan.com#?#.slider-slide:contains(Sponsored)
 kohls.com###PDP_monetization_HL
 kohls.com###PMP_monetization_HL
+kohls.com###kmn-featured-carousel
 kohls.com###kmncarousel-add_buy_carousel-anchor:has(.KMNProductSlider__sponsored)
 kohls.com###kmnsponsoredbrand-sponsored_top-anchor
 kohls.com###open-drawer
@@ -57552,6 +57557,7 @@ lootdest.org,lootdest.com,loot-link.com,lootlinks.co,loot-links.com#%#//scriptle
 lootdest.org,lootdest.com,loot-link.com,lootlinks.co,loot-links.com#%#//scriptlet('prevent-window-open', '', '5')
 lootlink.org#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 lootlinks.*#%#//scriptlet("set-constant", "canRunAds", "true")
+lootup.me#%#//scriptlet("abort-current-inline-script", "document.getElementById", ".style.display='block")
 loptelink.com##center > .separator > a[style] > img
 loptelink.com##center > a[href^="https://loptelink.com/ref/"] > img
 lordz.io###crossPromotion
@@ -72640,6 +72646,7 @@ thepointsguy.com#%#//scriptlet('set-session-storage-item', 'exitModal', '1')
 thepoorcoder.com##.adtester-container
 thepoorcoder.com##.side-ad
 thepoorcoder.com#%#//scriptlet("set-constant", "adblockDetector", "noopFunc")
+thepopinsider.com##.header-drop-zone
 thepopverse.com##.autoad
 thepopverse.com##div[class^="google-ad_"]
 theporn.cc##.gg-config
@@ -74853,6 +74860,7 @@ ulifestyle.com.hk#$#body { overflow: auto !important; }
 uloz.to###bandzoneHint
 ulozto.net#$#.l-wrapper { padding-top: 0!important; }
 ulta.com##.CriteoProductRail
+ulta.com##li.ProductListingResults__productCard:has(.pal-c-ProductCardFooter__sponsored)
 ulta.com#?#li.ProductListingResults__productCard:has(.ProductCard__badge:-abp-contains(Sponsored))
 ulta.com#?#li.ProductListingResults__productCard:has(.ProductCard__badge:contains(Sponsored))
 ultimate-catch.eu,bedrat.xyz,fx-22.com###page ~ div[id][class*=" "]
@@ -75488,6 +75496,7 @@ vectorspedia.com,305sports.net,igamemod.com,cyfostreams.com,godmods.com,pentruea
 vedbex.com,adomainscan.com,btc.ms##.modal-backdrop
 vegasslotsonline.com#$?#.game-row__body > .game-row__content + div { display: none !important; }
 vegasslotsonline.com#$?#body > .most-popular-games + section[class][style*="!important;"] { display: none !important; }
+velrix.net##a[href^="/adrouter/go/"]
 veporn.com,letsjerk.tv,drtuber.desi,vivatube.net,proporn.cc,smutr.com,silkengirl.com,yeptube.*,boom.porn,3prn.com,smutv.com##.spots
 versionweekly.com,kkworld.in##.inside-right-sidebar > #custom_html-3
 veryfreeporn.com,titshub.com,nsfwmonster.com,bustybloom.com,viralxvideos.es#%#//scriptlet("abort-current-inline-script", "document.cookie", "popMagic")
@@ -86189,6 +86198,7 @@ zzzyk.com###Tinfo
 ||gyazo.com^$domain=turbobit.net
 ||gyorietokc.hu/images/partnerek/kiemelt/
 ||gyorietokc.hu/uploads/banner/
+||gyrovague.com^$domain=archive.fo|archive.is|archive.li|archive.md|archive.ph|archive.today|archive.vn|btdig.com
 ||gywb.cn/cs_mulu/
 ||gywb.cn/gggl/
 ||gz-chengkao.com/js/duo.js
