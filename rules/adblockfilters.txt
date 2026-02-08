@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260208002550
-! Last modified: 2026/02/08 00:25:50
-! Blocked Filters: 98841
+! Version: 20260208101030
+! Last modified: 2026/02/08 10:10:30
+! Blocked Filters: 98861
 !
 ###AC_ad
 ###AD_160
@@ -18209,6 +18209,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /cdn-cgi/rum?
 /cdn-cgi/rum|
 /cdn-cgi/zaraz/*
+/cdn/wpm/b3918e4e0wbf3ac3cepc5707306mb02b36c6m.js
 /cdn_cookie_service.html
 /ce_l.aspx?showid=$third-party
 /cedexis.js
@@ -18826,6 +18827,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /fbpix-events-
 /fbpixel.js
 /fdjdjghrut_tt.js
+/fdmg-tag-manager/tags.js
 /fe_logger?
 /feature/metrics$xmlhttprequest
 /federated-analytics.all.min.js
@@ -21241,6 +21243,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /svr/*.aspx?placeid=$third-party
 /svr/popwin.aspx?$third-party
 /svs.gif?
+/sw.js?origin=
 /sw/analytics.js
 /swa_t.gif?
 /swatag.js
@@ -24330,6 +24333,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://sp.*/sp/h|$xmlhttprequest
 ://sportframe*.co^
 ://sportframe*.org^
+://ssgtm.
 ://stat.*/pageview/$xmlhttprequest
 ://stats.*/code/e.js
 ://t.*/open^$image
@@ -30454,6 +30458,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||manhua.acimg.cn^$stealth=referrer,domain=ac.qq.com
 @@||manhua.weibo.com/adv/
 @@||manhuagui.com^$stealth=referrer
+@@||manhuarmtl.com^$generichide
 @@||manifest.auditude.com/auditude/*.m3u8?$domain=rickandmorty.com
 @@||manifest.auditude.com/auditude/variant/$domain=adultswim.com
 @@||manjaro.pl^$generichide
@@ -31802,6 +31807,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tricksplit.io
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=truongblogger.top
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=try2link.com|forexrw7.com|fx-22.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tstrs.me
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tsubasa.im
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tt1069.com|akashio.com|1991421.cn|kantie.org|kejilion.pro|bilinovel.com|mcappx.com|yeeach.com|blog.6ziz.com|docsmall.com|uiadmin.net|4horlover.com|23qb.net|4spaces.org|aboluowang.com|assbbs.com|chaojizhibo.net|chtoen.com|daxiaamu.com|demo.ama.pub|dizhishengcheng.com|doitwell.tw|ekamus.info|eu4cn.com|ff14angler.com|freedidi.com|fsbot.xyz|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|mens1069.com|monnsutogatya.com|mpyit.com|myqqjd.com|numberempire.com|ozabc.com|pansearch.me|patch.ali213.net|pc3mag.com|reh.tw|shenfendaquan.com|sistersbedroom.com|sto520.com|vaptcha.com|wandhi.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|xugaoxiang.com|xxxxx520.com|yodu.org|yummy.best|zaixianjisuan.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=tunein.com
@@ -33219,6 +33225,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=theglobeandmail.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=thehealthsite.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=tractorsupply.com
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=tstrs.me
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=vogue.ru
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=wunderground.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in
@@ -40839,6 +40846,7 @@ carwow.co.uk##.stock-cars-v2__card-wrapper:has(> [data-controller="spdeal"])
 cashbackdeals.it##aside[class^="SideBanners_"]
 cashless.pl##body > div.container:has(> a[href^="https://www.cashless.pl/pliki/"])
 cashless.pl#?#.container > div.text-xs:contains(/^Reklama/)
+caspianpost.com##.news-inner__banner
 castanet.net###hdad
 castanet.net##div[style*="height:900px"]
 castanet.net##div[style*="width:300px;"]
@@ -46436,6 +46444,8 @@ etherscan.io##.container-xxl > div.align-items-center > div.col-md-9 + div.col-a
 etherscan.io##.container-xxl:has(> div[class^="py-"] > div > span#ContentPlaceHolder1_lblAdResult)
 etherscan.io##.d-flex.card-body > div[data-nosnippet=""] > div[style^="min-height:"]
 etherscan.io##[href^="https://moonpay-affiliate-program.sjv.io/"]
+etherscan.io##a[href="https://blockscan.com/"]
+etherscan.io##a[href="https://etherscan.io/contactusadvertise#contactSection"]
 etherscan.io##div[data-nosnippet]:has(> ins[id])
 etherscan.io##div[id^="ContentPlaceHolder"][id*="_divMultichainAddress"] + .scrollbar-custom > .d-flex > .text-center > ins
 etherscan.io##form[action="/search"] + p.text-white
@@ -49181,7 +49191,11 @@ g.pl##div[class^="ban00"][class*="wrap"]
 g.pl##div[id^="banC"]
 g2.com##.product-head__leads
 g2.com##div[data-track-in-viewport-options*="Advertisements"] + div[data-funnel-fingerprinting-path-value]
+g2a.com###popupLink
 g2a.com##div[data-testid="placement"]
+g2a.com##li[data-locator="ppa-offers-list__item"]:has(> div > div > div[class^="ZTH_StyledContainer"] > div[class^="ZTH_StyledProfileInfoDetails-sc"] > div[class^="OffersList_StyledProfileNameAndSponsored-sc-"])
+g2a.com#?#li[class^="SearchPage_StyledProductCard"]:has(> div.contents > div[class^="group/unibox"] > div.flex > div > div > div.flex > div.inline-grid:contains(SPONSORED))
+g2a.com#?#ul[class^="uni-box-slider__chunk"] > .col-span-1:has(> div.contents > div > div.flex-col > div > div.inline-grid:contains(SPONSORED))
 g2esports.com##.js-side-banner
 g4media.ro##div[class^="code-block code-block-"][style]
 g4u.to##table tr > td:has(> a[href*="/update/"])
@@ -58985,6 +58999,8 @@ malwaretips.com##div[id^="mwtad-"]
 mamahawa.com,10short.pro#%#//scriptlet('trusted-replace-node-text', 'script', '/function openLink\(\)[\s\S]*?window\.location\.href/', '/(function openLink\(\)[\s\S]*?)window\.location\.href.*;/', '$1')
 mamalisa.com##div[class] > div[style$="padding-top:1em;font-size:.85em;"]
 mamalisa.com#?#.row div[class] > div[style]:contains(Advertisement)
+mamamia.com.au#$#.header-main-container { top: 0 !important; }
+mamamia.com.au#$#.top-leaderboard-ad-container { display: none !important; }
 mamazone.pl#?#.row div[class][style*="border-bottom"][style*="max-height:"] > div[style]:contains(REKLAM):upward(1)
 mambiznes.pl##.a-zone
 mambiznes.pl##.container.header-billboard-area
@@ -59143,6 +59159,7 @@ manhuagui.com##div[style^="width: 300px; height: 250px;"]
 manhuapica.com##a[href^="/ad/"]
 manhuaren.com###lb-win
 manhuarmmtl.com#%#//scriptlet('prevent-fetch', '_adcheck')
+manhuarmtl.com##.custom-ads-wrapper
 manhuascan.com##.itemupdate2
 manhuasy.com,teenmanhua.com##.body-wrap > div.c-sidebar
 manhuatop.org##.c-sidebar
@@ -76000,6 +76017,7 @@ tsdm39.com###ct > div > a[target="_blank"] > img
 tsmodelstube.com##.spot-regular
 tsmodelstube.com##a[href="https://tsmodelstube.com/a/tangels"]
 tsn.ca##widgets-bms-bet-slip[sponsor="fanduel"]
+tstrs.me#%#//scriptlet('prevent-setTimeout', 'offsetHeight === 0')
 tsubasa.im#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
 tsubasa.im#%#//scriptlet('prevent-setInterval', '/home/?adblock=')
 tsubasa.im#%#//scriptlet('prevent-setTimeout', '/home/?adblock=')
@@ -83153,7 +83171,6 @@ zzzyk.com###Tinfo
 ||aisixiang.com/images/*-20
 ||aisy19.com/dm/
 ||aitotop.com^*/collect.js?
-||aitsatho.com^$popup
 ||aiuw.com/images/*?from=ad
 ||aivalabs.com^$third-party
 ||aiviy.com/assets/js/union.js
@@ -83943,6 +83960,7 @@ zzzyk.com###Tinfo
 ||assets.rpglogs.com/js/global/playwire.*.js$domain=warcraftlogs.com
 ||assets.s-bol.com/AppMeasurement-
 ||assets.sb-cd.com/static/common/js/bjssu_$domain=spankbang.com
+||assets.targetimg1.com/ssx/ssx.mod.js$domain=target.com
 ||assets.thalia.media/ocsassets/heimdall/consent-banner-bootstrap/main-nomodule.*.js$domain=osiander.de
 ||assets.tumblr.com/pop/monetization/html/*.html
 ||assets.webinfcdn.net/img/sponsored.gif
@@ -84287,7 +84305,6 @@ zzzyk.com###Tinfo
 ||baike.com/newtop/news.html
 ||baikebcs.bdimg.com/*banner*.jpg
 ||baimakanshu.com/assets/public/
-||baipahanoop.net^$popup
 ||baishuku.com/news/$script
 ||baiten.cn/images/weInternation/
 ||baitoru.com/pu/js/2017/adobe_send_tracking.js
@@ -86874,6 +86891,7 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eavesofefinegoldf.info^$popup
 ||eazydata.io^$third-party
@@ -92788,6 +92806,7 @@ zzzyk.com###Tinfo
 ||partner.superbahisaffiliates*.com^
 ||partner.video.syndication.msn.com^$~object,third-party
 ||parts.akibablog.net^$subdocument
+||partsgeek.com/sspgt/
 ||parturemv.top^$popup
 ||partwithner.com/partners/
 ||paruvendu.fr/*/stats/
@@ -95433,6 +95452,7 @@ zzzyk.com###Tinfo
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||sss.xxx/poppy/$script
 ||sss777.net/Alove-A/
+||sst.carwow.
 ||ssyy881.com/zz/
 ||st-*.dynamicyield.com^
 ||st-n.ads*-adnow.com^
