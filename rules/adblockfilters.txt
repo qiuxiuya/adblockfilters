@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260211005942
-! Last modified: 2026/02/11 00:59:42
-! Blocked Filters: 99500
+! Version: 20260211100040
+! Last modified: 2026/02/11 10:00:40
+! Blocked Filters: 99505
 !
 ###AC_ad
 ###AD_160
@@ -23110,6 +23110,11 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 2dfan.com,galge.fun##.leftside-bg
 2dway.com##a[href="https://www.2dway.com/5244/"]
 2ememain.be##.hz-Banner
+2fa.live###ads_row
+2fa.live##.not_vn
+2fa.live##[alt="Advertisement"]
+2fa.live##p:has-text(Advertising)
+2fa.live#?#p:contains(Advertising)
 2gb.com##.related_articles
 2ip.*#?#.ipblockgradient > div.ip + div[class]:contains(IP)
 2ip.io,2ip.ru###main-menu > nav > ul > li > a[target="_blank"]
@@ -37765,6 +37770,7 @@ arenda.az##.center2 > a[href].bann
 arenda.az##.kurs_banner
 arenda.az,globalinfo.az,sfera.az,metbuat.az##.ainsyndication
 aresnov.org###floatcenter
+argos.co.uk##.ds-c-grid-item:has(div[class*="ProductCardstyles__SponsoredBadge-"])
 argos.co.uk##[class^="styles__LazyHydrateCard"]:has([class*="ProductCardstyles__FlyoutBadge"])
 argos.co.uk##[class^="styles__LazyHydrateCard-sc"]:has([class*="SponsoredBadge"])
 argos.co.uk##[data-testid="citrus_products-carousel"]
@@ -84282,7 +84288,6 @@ zzzyk.com###Tinfo
 ||assets.rpglogs.com/js/global/playwire.*.js$domain=warcraftlogs.com
 ||assets.s-bol.com/AppMeasurement-
 ||assets.sb-cd.com/static/common/js/bjssu_$domain=spankbang.com
-||assets.targetimg1.com/ssx/ssx.mod.js$domain=target.com
 ||assets.thalia.media/ocsassets/heimdall/consent-banner-bootstrap/main-nomodule.*.js$domain=osiander.de
 ||assets.tumblr.com/pop/monetization/html/*.html
 ||assets.webinfcdn.net/img/sponsored.gif
