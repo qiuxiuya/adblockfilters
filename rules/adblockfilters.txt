@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260302002321
-! Last modified: 2026/03/02 00:23:21
+! Version: 20260302094930
+! Last modified: 2026/03/02 09:49:30
 ! Blocked Filters: 98168
 !
 ###AC_ad
@@ -16185,9 +16185,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .lol/sw.js$third-party
 .lol^$domain=sextb.net|javplayer.org
 .lu/ads/
-.m.d8qu.com^
 .m.kanshuzw.com^
-.m.qiuwu.net^
 .mail.odysee.com/o/$image
 .mailbutler.io/tracking/
 .mailgun.patreon.com/o/$image
@@ -23499,7 +23497,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 4anime.gg,bravoporn.com,gogoanime.co.in,harimanga.me,hurawatch.cc,instamod.co,leercapitulo.co,mangadna.com,miraculous.to,putlockers.li,sukidesuost.info,waploaded.com,yts-subs.com##[style*="width: 100% !important;"]
 4c.cn##div[id^="mid_ad"]
 4c.cn##div[id^="top_ad"]
-4cc.com.au,baltic-course.com,futbol24.com,gatewaynews.co.za,gsmarena.com,gulfnews.com,idealista.com,jetphotos.com,karger.com,maritimejobs.com,newagebd.net,prohaircut.com,railcolornews.com,titter.com,zbani.com##.adv
+4cc.com.au,baltic-course.com,domusweb.it,futbol24.com,gatewaynews.co.za,gsmarena.com,gulfnews.com,idealista.com,jetphotos.com,karger.com,maritimejobs.com,newagebd.net,prohaircut.com,railcolornews.com,titter.com,zbani.com##.adv
 4chan.org###bd > div[style="text-align:center;margin: 10px 0"]
 4chan.org##.danbo-slot
 4chan.org,4channel.org##.danbo-slot
@@ -56637,6 +56635,7 @@ kpzpw.com##.header-pic
 kpzpw.com##.littlebanner
 kq7.com##.J_appFromLen
 kqed.org##.components-Ad-__Ad__ad
+kqed.org##.components-AdLive-__AdLive__ad
 krajskelisty.cz###wpBannerPlace
 krajskelisty.cz##.advert
 krajskelisty.cz##div[id^="ra-r2b2-code"]
@@ -84972,6 +84971,7 @@ zzzyk.com###Tinfo
 ||cdn.usconcealedcarry.com/reciprocity/payload-default-banners/
 ||cdn.vaughnsoft.net/abvs/
 ||cdn.vgc.no/js/libs/homad-config.json$replace=/"enabled":true\,/"enabled":false\,/i
+||cdn.viously.com/js/sdk/boot.js
 ||cdn.vrsumo.com/js/moartraffic.js
 ||cdn.weilf.cn/Templates/*/js/esplugin.js$replace=/type: "Json"\,//,domain=jingxuanyoucheng.com
 ||cdn.wendycode.com/blogger/antiAdbDefer.js
