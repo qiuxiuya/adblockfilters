@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260309002337
-! Last modified: 2026/03/09 00:23:37
+! Version: 20260309095052
+! Last modified: 2026/03/09 09:50:52
 ! Blocked Filters: 99527
 !
 ###AC_ad
@@ -10645,6 +10645,7 @@
 ##.floatads
 ##.floated-ad
 ##.floated_right_ad
+##.floating-ad
 ##.floating-ads
 ##.floating-advert
 ##.floatingAds
@@ -31023,6 +31024,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||nbcolympics.com/profiles/olympics/*$domain=nbcolympics.com
 @@||nbe.com.eg/NBEeChannelManager/CallMW.aspx$~third-party
 @@||nbyts.online^$generichide
+@@||nc-cdn.oss-us-west-1.aliyuncs.com/videotranscriber/upload/$stealth=3p-auth
 @@||nc-myus.com/images/pub/www/uploads/merchant-logos/$image,~third-party
 @@||ncaa.com^$generichide
 @@||nceea.cn/Content/images/ad/
@@ -86041,6 +86043,7 @@ zzzyk.com###Tinfo
 ||cifnews.com/yuguo3.0/live_dynamic/js/live_dynamic.js
 ||cig.com.cn^$third-party
 ||cilimao.*/amaod/
+||cilipa.com^*0.js
 ||cimg.cnyes.cool/prod/adContent/$image
 ||cimri.com/api/pixel
 ||cined.com/content/plugins/abss-adblock-notice/assets/js/adblocker.min.js
@@ -88156,7 +88159,6 @@ zzzyk.com###Tinfo
 ||fourchette-et-bikini.fr/core/modules/statistics/
 ||foureyes.io/fe-init.js
 ||foursquare.com/v2/private/logactions
-||fourwhenstatistics.com^$popup
 ||fouwheepoh.com^$popup
 ||foxbooru.com/js/bab.min.js
 ||foxhq.com/cyltuy.gif
@@ -88703,7 +88705,6 @@ zzzyk.com###Tinfo
 ||globovision.com/js/ads-home.js
 ||glomera.com/stats
 ||glomex.com^$ping
-||gloogruk.com^$popup
 ||glospowiatusredzkiego.pl/pl/_ajax/getBanners.php
 ||glospowiatusredzkiego.pl/pl/js/qp.js
 ||glove.fit^$third-party
@@ -89081,7 +89082,6 @@ zzzyk.com###Tinfo
 ||hatarako.net/api/recommend/analyze_logger
 ||hatena.ne.jp/api/log?
 ||hatwasallokmv.info^$popup
-||hauchiwu.com^$popup
 ||havegrosho.com^$popup
 ||havysoft.cl/mt_b.png
 ||hawk.live/images/a/bb/large-*-*.gif
@@ -89369,7 +89369,6 @@ zzzyk.com###Tinfo
 ||holdonstranger.com^$third-party
 ||holidaycheck.*/svc/ubt/v1/events
 ||hollaforums.com/if/rc
-||hollysocialspuse.com^$popup
 ||holyfamilyradio.org/banners/
 ||homad-global-configs-eu-fra.schneevonmorgen.com.s3.amazonaws.com/www.vgtv.no/config.json$replace=/"enabled": true\,/"enabled": false\,/i
 ||homad-global-configs-eu-fra.schneevonmorgen.com.s3.amazonaws.com/www.vgtv.no/config.json$replace=/"enabled": true\,/"enabled": false\,/i,important
@@ -90865,6 +90864,7 @@ zzzyk.com###Tinfo
 ||klandmart.com/K-Landmart_0011.jpg
 ||klaviyo.com/onsite/js/sentry.
 ||klaviyo.com/onsite/track-analytics?
+||kleenscan.com/storage/images/banners/
 ||klix.ba/pixel/
 ||klm.us/CWZUvc/
 ||kloth.net/images/pixel.gif
