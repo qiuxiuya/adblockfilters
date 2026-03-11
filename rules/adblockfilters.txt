@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260311005357
-! Last modified: 2026/03/11 00:53:57
-! Blocked Filters: 99870
+! Version: 20260311094406
+! Last modified: 2026/03/11 09:44:06
+! Blocked Filters: 99876
 !
 ###AC_ad
 ###AD_160
@@ -13876,7 +13876,6 @@
 ##.u-lazy-ad-wrapper
 ##.udn-ads
 ##.ue-c-ad
-##.uk-container.uk-container-expand
 ##.uk-width-1-1.adbox
 ##.ult_vp_videoPlayerAD
 ##.under-header-ad
@@ -14725,6 +14724,8 @@
 ##a[href*="/jump/next.php?r="]
 ##a[href*="/kt169.com"]
 ##a[href*="/l1y9.com"]
+##a[href*="/lesi151.cc"]
+##a[href*="/lesi198.com"]
 ##a[href*="/mobads.php?"]
 ##a[href*="/register/?i_code="] > img
 ##a[href*="/uu5566.cn.com/"]
@@ -20119,6 +20120,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /nowscore/ad/*
 /nozomi4.js$domain=nozomi.la
 /np?log=
+/npm/disable-devtool
 /npm/perfops-rom
 /nr-spa-1216.min.js
 /ns.html?id=GTM-
@@ -35983,7 +35985,10 @@ adultgamesworld.com##.masonry-layout__panel:has(a[href^="https://access-the-webs
 adultgamesworld.com##.rel:has(> a[href^="https://animeamigos.org/"])
 adultgamesworld.com##.rel:has(a[href^="https://access-the-website.com/"])
 adultgamesworld.com##.tt
+adultgamesworld.com##a[href*="utm_source=agw-banner"]
 adultgamesworld.com##a[href^="https://joystick.tv/t/?t="]
+adultgamesworld.com##aside > div.widj:has(> div.textwidget > p > ins)
+adultgamesworld.com##iframe[src^="https://animeapp.org/"]
 adultgamesworld.com#%#//scriptlet('set-constant', 'doOpen', 'undefined')
 adultgifworld.com,babeshows.co.uk,boobieblog.com,fapnado.com,iseekgirls.com,the-new-lagoon.com##a[href^="http://refer.ccbill.com/cgi-bin/clicks.cgi?"]
 adulthub.ru#?##main > div.container > div.row > div[class] > div.widget > div.title:has(> h3:contains(/Partners$|Live Girls/))
@@ -72728,10 +72733,6 @@ starwarsaddicted.it#%#//scriptlet('set-constant', 'advanced_ads_check_adblocker'
 starwarsaddicted.it,wuyong.fun,26g.me,myqqjd.com,poapan.xyz,javboys.com,idevicecentral.com,fcportables.com,codehelppro.com#%#//scriptlet('abort-on-property-read', 'reqServers')
 stat-nba.com###ad_video
 statesman.com##article > div:has(> div:first-child + div[data-block-type="ad"]:last-child)
-statesville.com,wacotrib.com#%#//scriptlet('abort-on-property-read', 'TNCMS.Access')
-statesville.com,wacotrib.com#@#.ad-text
-statesville.com,wacotrib.com#@#.adContent
-statesville.com,wacotrib.com#@#.adSense
 staticice.com.au##a[href^="http://prf.hn/click/"]
 staticice.com.au##table[width="100%"] > tbody > tr > td[height="15"][valign="top"]:only-child
 staticice.com.au##table[width="500"][align="center"] > tbody > tr > td[height="21"]:only-child
@@ -76759,6 +76760,7 @@ tubesex.me###banneradv
 tubesex.me,xxxadd.com##.adban1
 tubesex.me/eureka
 tubev.sex##.sp_block_3-300-250
+tubewav.com#%#//scriptlet('prevent-window-open')
 tubewolf.com##.home-banner
 tubewolf.com##.network-links
 tubewolf.com##[id^="TA"][id*="-Native-"]
@@ -78819,6 +78821,9 @@ vpsdx.com##.gsfha3-form
 vpsdx.com##.gthfdsa
 vpser.net##.ab_cpb
 vpser.net##.ab_cpr
+vpstop.cn##a[href*="/ClickAd"]
+vpstop.cn##a[target="_blank"] > img[style^="width: 100%;max-height:"]
+vpstop.cn#?#.sidebar > div.uk-card:contains(赞助商家)
 vr-compare.com##div[style="min-height: 250px; background-color: rgba(0, 0, 0, 0.133); display: flex; justify-content: center; align-items: center;"]
 vrbo.com##[data-stid="meso-ad"]
 vrcmods.com#%#//scriptlet("abort-on-property-read", "bruhded")
@@ -82487,6 +82492,8 @@ zzzyk.com###Tinfo
 ||*.$image,rewrite=abp-resource:1x1-transparent-gif,third-party,domain=rmdown.com
 ||*.com/*/*/tt?id=$third-party
 ||*.com/|$third-party,domain=youtubepro.app
+||*.mp4$redirect=noopmp3-0.1s,domain=huavod.com
+||*.mp4$rewrite=abp-resource:blank-mp3,domain=huavod.com
 ||*/ad/$redirect=noopmp3-0.1s,domain=huaren.tv
 ||*/ad/$rewrite=abp-resource:blank-mp3,domain=huaren.tv
 ||*adapt-beacon.awsprodops.movetv.com^
@@ -87677,7 +87684,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eazydata.io^$third-party
 ||ebay.com/delstats/
@@ -97504,6 +97510,7 @@ zzzyk.com###Tinfo
 ||tr.minval.az/e/musavat.php$third-party
 ||tra.scds.pmdstatic.net/advertising-core/
 ||tra.scds.pmdstatic.net/sourcepoint/
+||trace-*.free-reels.com^
 ||trace-*.hungrypanda.co^
 ||tracead.com^$third-party
 ||traceless.me^$third-party
@@ -99539,7 +99546,6 @@ zzzyk.com###Tinfo
 ||yts.lt/atag*.js
 ||ytse*.top/Static/Home/GongGao/img/
 ||ytsubme.com/assets/adblock/
-||yu987.com^$third-party
 ||yuanbao777.com/download/*.gif
 ||yuanpinghengkangfuyouxiangongsi.top^$domain=9xav.cc
 ||yuanxue365.com/js/a22.
