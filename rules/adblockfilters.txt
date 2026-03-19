@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260319163827
-! Last modified: 2026/03/19 16:38:27
-! Blocked Filters: 97202
+! Version: 20260320005458
+! Last modified: 2026/03/20 00:54:58
+! Blocked Filters: 97205
 !
 ###AC_ad
 ###AD_160
@@ -63465,6 +63465,7 @@ panda985.com,qqdsw8.cn,knews.com.tw,shiyrj.top,yalishi.com,guozaoke.com,100ec.cn
 pandadevelopment.net,forplayx.ink,karanpc.com,iconmonstr.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 pandamovies.org###overlay
 pandamovies.org##a[href^="https://freepopnews.skin/"]
+pandamovies.org#%#//scriptlet('remove-node-text', 'script', 'mainAds')
 pandamovies.pw##.mingplus
 pandamovies.pw##.rightdiv1content > a[href][rel="nofollow"]
 pandamovies.pw##body > div[style^="position: fixed; overflow: hidden;"]:not([class]):not([id])
@@ -65390,6 +65391,7 @@ pornhub.com,redtube.com,tube8.com,tube8.es,tube8.fr,youjizz.com,youporn.com##[st
 pornhub.com,tube8.com,tube8.es,tube8.fr,xvideos.com,youjizz.com##img[src*="blob:" i]:not(video)
 pornhub.com,youporn.com###pb_template
 pornhub.com,youporn.com#?#:-abp-properties(float: right; margin-top: 30px; width: 50%;)
+pornhub.org##.emptyBlockSpace
 pornicom.com###data > #related_videos_col + #related_videos_col
 pornicom.com###tube_ad_wrap
 pornicom.com##.advertisings
@@ -66120,6 +66122,7 @@ proptiger.com##div[style^="position:relative;"][style*="height:100px;"]
 proreader.io###offerModal
 prosettings.net##.placement
 prosettings.net##.pro-placement
+prospectmagazine.co.uk#%#//scriptlet('trusted-replace-node-text', 'script', 'stickyOffset', '/const ad = document\.getElementById\(.*;/', 'const ad = document.getElementById("menuToggle");')
 prostylex.org##.wrapper > div[style="text-align:center;font-family:Tahoma;"]:not([class]):not([id])
 prostylex.org#?#.wrapper > div[style*="text-align"]:has(> a[href^="https://trustaffs.com"])
 prostylex.org#?#.wrapper > div[style="text-align:center;font-family:Tahoma;"]:not([class]):not([id]) ~ center:has(a[href="http://slotslights.com/"])
@@ -79078,7 +79081,7 @@ xv-ru.com##div[id^="ad-footer"]
 xv-ru.com,xvideos.*##.nutaku-gamesAdd commentMore actions
 xv-ru.com,xvideos.*##a[href^="https://s.zlink7.com/"]
 xvideo.cc#%#//scriptlet("set-constant", "poped", "true")
-xvideos.*##.exo-ad-ins-container
+xvideos.*##body .exo-ad-ins-container
 xvideos.*,tophentaicomics.com##.thumb-ad
 xvideos.com###ad-footer
 xvideos.com###video-right
