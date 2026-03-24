@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260324005438
-! Last modified: 2026/03/24 00:54:38
-! Blocked Filters: 99747
+! Version: 20260324094754
+! Last modified: 2026/03/24 09:47:54
+! Blocked Filters: 99755
 !
 ###AC_ad
 ###AD_160
@@ -17850,6 +17850,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /api/popv2.php$xmlhttprequest,~third-party,domain=kissanime.com.ru|animehub.ac|animeflv.*
 /api/reqAnalytic/*
 /api/senddata?$xmlhttprequest,third-party
+/api/sentry/tunnel$xmlhttprequest
 /api/spots/*$domain=yomovies.*|speedostream.com|watchomovies.com|gofilms4u.pro|hentaihand.com|filmlinks4u.pro|analdin.com|supjav.com|crazyporn.xxx|hog.tv|porntry.com|love4porn.com|freeadultcomix.com|hog.mobi|sextb.date|sextb.net|pornpapa.com|javplayer.org|porntry.com|xtapes.tw
 /api/spots/*$xmlhttprequest,redirect=nooptext,domain=xfantazy.com
 /api/stat?
@@ -19101,6 +19102,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /geov2.js
 /get/*?zoneid=*&jp=$script
 /get/?go=1&data=$subdocument
+/get/live/web/_/*$script,~third-party
 /get?go=1&data=$subdocument
 /getAditem
 /getAliyunAdv.
@@ -25051,7 +25053,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@thalia.de/shop/*.html?pid=*&group_id=0&banner_id=
 @@truyen$stealth=referrer,image,domain=blogtruyen.vn
 @@weather.gov/xml/$document
-@@ws://localhost^$stealth,domain=play.sooplive.co.kr
+@@ws://localhost^$stealth,domain=play.sooplive.com
 @@yandex.*/user-id?$stealth=referrer|searchqueries
 @@|/wp-content/plugins/*/assets/fuckadblock.js
 @@|^$generichide
@@ -38031,9 +38033,9 @@ athirvu.in#?#.sticky-sidebar > section.widget:has(> div.textwidget ins.adsbygoog
 athlonsports.com##.is-fallback-player
 athlonsports.com##.m-fixedbottom-ad--container
 athlonsports.com##section[id^="phxoutbrain-"]
-athlonsports.com,autoblog.com,bikemag.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,surfer.com,thespun.com,thestreet.com,travelhost.com##.styles_headerAdSlot__f4Z0n
+athlonsports.com,autoblog.com,bikemag.com,bringmethenews.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,surfer.com,thespun.com,thestreet.com,travelhost.com##.styles_headerAdSlot__f4Z0n
+athlonsports.com,bringmethenews.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,surfer.com,thespun.com,travelhost.com,www.autoblog.com,www.thestreet.com##.exco-player-wrapper
 athlonsports.com,bringmethenews.com,si.com##.is-exco-player
-athlonsports.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,surfer.com,thespun.com,travelhost.com,www.autoblog.com,www.thestreet.com##.exco-player-wrapper
 athomedaily.com,atworkdaily.com##.ad-backing
 atlantablackstar.com,finurah.com,theshadowleague.com##.raptive-ddm-header
 atlantatribune.com,footballleagueworld.co.uk,ioncinema.com,marijuanamoment.net,srilankamirror.com,tribune.net.ph###mvp-leader-wrap
@@ -44228,6 +44230,8 @@ dateandtime.info##.adtoplinks
 datedatego.com##.ddg
 datedatego.com##.ddg0
 datenna.com##.fPHZZA
+datetimego.com##.desktop-only
+datetimego.com##.mobile-only
 datingpornstar.com##a[href^="https://mylinks.fan/"]
 datingsitespot.com,tips-and-tricks.co###text-10
 datingsitespot.com,utilitymagazine.com.au###text-16
@@ -53008,8 +53012,6 @@ hktvyb.com##div[style="text-align:center;"] > a[target="_blank"] > img[alt="APP"
 hkwb.net##.guanggao2
 hkwb.net##.leftadv2
 hkwb.net##.rightadv2
-hl.cn###xf_left
-hl.cn###xf_right
 hlavnespravy.sk###bottom-nav > #text-29
 hlavnespravy.sk###text-37
 hlavnespravy.sk##.adblock-warning
@@ -65427,6 +65429,7 @@ peugeotclub.eu#@#.reklama
 pexels.com##.inline-ads
 pexels.com##.js-sponsored-photos
 pexels.com##.partner-box
+pexels.com##[data-testid="column"] [data-testid="item"]:has([data-text="Sponsored Photos"])
 pexels.com##a[href*=".istockphoto.com"]
 pexels.com##div[class="RowItem_gridItem__OfhML RowItem_fullWidth__cIdtN RowItem_expand__TR5R6"]
 pexels.com##div[class^="FullWidth_container_"]:has(a[rel="sponsored noopener"])
@@ -65785,7 +65788,7 @@ pixabay.com##.gettyImagesContainer--7sZnR
 pixabay.com##.present-g-item
 pixabay.com##.show-gtty-item
 pixabay.com##.show-gtty-item > div[style="font-size:14px;color:#a5a8ab;margin:5px 9px"]
-pixabay.com##[class^="gettySponsoredImagesContainer"]
+pixabay.com##[class^="gettySponsored"]
 pixabay.com##div[class*="sponsoredWithResults"]
 pixabay.com##div[class="cell--UMz-x"]:has(button[aria-label="About this advertiser"])
 pixabay.com##div[class^="adPlacement"]
@@ -74367,6 +74370,7 @@ tgfcer.com##.ad_headerbanner
 tgfcer.com##.ad_text
 tgfcer.com##.portalbox
 tgfcer.com##div[id^="ad_thread"]
+tgsearch.su##.tgsearch-advertise
 tgstat.com##.r1-aors
 th-sjy.com##.banner-post
 th2plant.com#$#body ins.AdSense#vicDom { display: block !important; }
@@ -85944,6 +85948,7 @@ zzzyk.com###Tinfo
 ||casino.betsson.com^$popup
 ||casinobet.com*&click_id=$popup
 ||casiyouaffiliates.com^$popup
+||castoola.tv^*/ads/$domain=sabc-plus.com
 ||catalove.com/bimp/
 ||catalove.com/ntv/
 ||catbox.moe/bb5wdv.jpg
@@ -86051,6 +86056,8 @@ zzzyk.com###Tinfo
 ||cdn.gsmarena.com/vv/assets*/js/_pf-*.js
 ||cdn.gulte.com/wp-content/uploads/*/IndianClicks_Exxeella_Gulte_
 ||cdn.haokongbu1.com^*.js
+||cdn.http.anno.channel4.com/m/*/*.mp4$media,domain=uktvplay.uktv.co.uk|uktvplay.co.uk
+||cdn.http.anno.channel4.com/m/1/$media,domain=uktvplay.co.uk
 ||cdn.huya.com/leaf/$xhr
 ||cdn.imgz.me/player/ifr/vod/jw-*/vast.js
 ||cdn.iseekgirls.com/ads/
@@ -93930,6 +93937,7 @@ zzzyk.com###Tinfo
 ||player.desenefaine.net/js/script_*.js
 ||player.glomex.com^$domain=parallaximag.gr
 ||player.javboys.cam/cdn-cgi/trace
+||player.mangomolo.com/stats/
 ||player.nadmorski24.pl/video_file/$media,redirect=noopmp3-0.1s
 ||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads,domain=kooora.com
 ||player.ooyala.com/errors/report?
