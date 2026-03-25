@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260325005727
-! Last modified: 2026/03/25 00:57:27
-! Blocked Filters: 96636
+! Version: 20260325095326
+! Last modified: 2026/03/25 09:53:26
+! Blocked Filters: 96640
 !
 ###AC_ad
 ###AD_160
@@ -18836,6 +18836,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /exowb/froload.js$script
 /exowb/fronload.js$script
 /exowb/frontload.js$script
+/exowb/frotload.js$script
 /expcount/additional.php
 /exponea.min.js
 /exports/tour/*$third-party
@@ -24721,8 +24722,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/needsharebutton.min.js$domain=leetcode-cn.com
 @@/owa/service.svc$document
 @@/player/*$stealth=referrer,domain=ibomma.*
-@@/player/stats.php$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|watchmdh.to|porn4fans.com
-@@/player_ads.html$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|camwhoresbay.porn|watchmdh.to|ebalovo.porn|ebalovo.adult|camlovers.tv|camhub.tv|pornissimo.org|porntn.com|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|sexcams-24.com|watchmdh.to
+@@/player/stats.php$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|watchmdh.to|porn4fans.com|porno24.to
+@@/player_ads.html$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|camwhoresbay.porn|watchmdh.to|ebalovo.porn|ebalovo.adult|camlovers.tv|camhub.tv|pornissimo.org|porntn.com|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|sexcams-24.com|watchmdh.to|porno24.to
 @@/playlist.m3u8$stealth=referrer|ip
 @@/playlist/*caxi.m3u8$xmlhttprequest,stealth=referrer,domain=crackstreamer.net|streameast.app|1stream.eu|buffstreams.app
 @@/playlists/*/play*.jpeg$xmlhttprequest,stealth=referrer
@@ -29055,7 +29056,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||images4u.cc^$generichide
 @@||imasdk.googleapis.com$domain=video.huffingtonpost.it
 @@||imasdk.googleapis.com/js/$domain=cari.com.my
-@@||imasdk.googleapis.com/js/core/bridge*.html$domain=~spotify.com|~danet.vn
 @@||imasdk.googleapis.com/js/core/bridge*.html$subdocument,domain=~airtelxstream.in|~danet.vn|~spotify.com
 @@||imasdk.googleapis.com/js/core/dai_iframe3$domain=southpark.cc.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3$domain=rotana.net
@@ -54468,6 +54468,7 @@ joblo.com#%#//scriptlet("abort-current-inline-script", "document.body.appendChil
 joblo.com$$script[tag-content="adb:function()"][min-length="20000"][max-length="40000"]
 jobrapido.com##.leaderboard-header-wrapper
 jobzhub.store###iframe_id
+jobzhub.store##div[id^="ad"]
 jocooks.com,tasteandtellblog.com,allaboutcats.com,cookingperfected.com,curbsideclassic.com,fortsettings.com,gethealthyu.com,goldendoodleadvice.com,housingaforest.com,letthemeatgfcake.com,listcaboodle.com,makinglemonadeblog.com,moneyning.com,nanascraftyhome.com,parentingpod.com,psychreg.org,runeterraccg.com,spacedmagazine.com,strengthandsunshine.com,tdalabamamag.com,thisisraleigh.com,ticotimes.net,unconventionalbaker.com,whereverwriter.com#%#//scriptlet("abort-on-property-read", "window.adthrive.config")
 joe.co.uk##.article > .sticky-spacer-common
 joe.co.uk,whattoexpect.com,timeout.com,thrillist.com##body .ad-container
@@ -63206,7 +63207,6 @@ pastebin.com##iframe[src="/_lead_custom.php"]
 pastebin.com#?#div[style]:not([class]):not([id]) > .adsbyvli:first-child:upward(1)
 pastebin.pl##a[href^="https://www.binance.com/"] > img
 pastedownload.com##.uk-list > li:has(> .uk-label + span > a[rel][target="_blank"])
-pastee.dev##[href="https://buyvm.net"]
 pasteflash.sx#%#//scriptlet('prevent-requestAnimationFrame', 'blocked')
 pastehouse.com##.col-md-9 > .text-center > a[target="_blank"][rel="nofollow"] > img
 pastehouse.com#%#//scriptlet('abort-current-inline-script', 'document.write', 'Banner')
@@ -65021,6 +65021,7 @@ pornmium.com,etherealgames.com,androidphone.fr,esports.net,movilforum.com,apkmb.
 pornmium.com,familystrokesvid.com,erotic-hentai.com,erogarga.com,javhdporn.net,eyerollorgasm.com###tracking-url
 pornmium.com,mlsbd.shop,esports.net,10hd.xyz,vivahentai4u.net,dmerharyana.org,learncomputerscienceonline.com,animationxpress.com,coursesxpert.com,javhoho.com,thefappeningblog.com,aagmaal.com,playsexgames.xxx###text-3
 porno-usa.com##img[alt="chaturbate"]
+porno24.to,viralxxxporn.com#%#//scriptlet('prevent-setTimeout', '.style.visibility', '2000')
 pornoaffe.com,hd-pornos.net##div[id^="wa_"].widget
 pornoaffe.com,hd-pornos.net#%#//scriptlet("set-constant", "vpUsePreRoll", "false")
 pornoaffe.com,hd-pornos.net,hd-easyporn.com,porn-monkey.com##aside[id^="special"]
@@ -69191,21 +69192,19 @@ slang.net##.adTopLB
 slant.co##.SummaryPage-LustreEmbed
 slant.co##._SummaryPageSponsoredOptionView
 slashdot.org###announcement
-slashdot.org###cloud
-slashdot.org###main-nav-badge-link
+slashdot.org###monb-sticky
+slashdot.org###sitewide-top-banner-placeholder
 slashdot.org###slashdot_deals
 slashdot.org###vibe-coding-bar
 slashdot.org##.ad-blocked-newsletter
-slashdot.org##.adwrap
-slashdot.org##.article-nel-12935
 slashdot.org##.deals-wrapper
 slashdot.org#$##main-nav-button { visibility: hidden !important; }
 slashdot.org#%#//scriptlet('prevent-fetch', '/sourceforge\.net\/about\/(top|floating)_sitewide/', 'emptyStr')
 slashdot.org#?#.fhitem-story.fhitem:contains(Sponsored Content)
 slashdot.org#?#.fhitem-story.fhitem:has-text(Sponsored Content)
 slashdot.org#?#.fhitem:has(> header > div.ntv-sponsored-disclaimer)
-slashdot.org,sourceforge.net###floating-content
-slashdot.org,sourceforge.net###mdb-sticky
+slashdot.org#?#.grid_24:contains(Featured Content)
+slashdot.org#?#.grid_24:has-text(Featured Content)
 slashfilm.com###primis-container
 slashfilm.com##.under-art
 slashfilm.com,healthdigest.com###primis-container
@@ -76256,7 +76255,6 @@ viralsciencecreativity.com##div[id^="pagePinnedMiddle"]
 viralthread.com#@#.affiliate
 viralxxxporn.com##.footer-scroller:has(> .bottom-adv)
 viralxxxporn.com##.sidebar-adv
-viralxxxporn.com#%#//scriptlet('prevent-setTimeout', '.style.visibility', '2000')
 viralxxxporn.com,thothub.vip,wxx.wtf,camhub.world#$#body iframe#ads_iframe[src*="/player_ads.html"] { display: block !important; }
 virgilio.it###localadvstuff
 virgilio.it##aside > .hp_300x1
@@ -77122,6 +77120,8 @@ webcourses.us#?#.herald-sidebar div[id^="text-"] > h4 > span:contains(/^Advertis
 webcras.com##body > br + div[id][class*=" "]
 webcric.com###sticky-728x90-ad
 webdevtrick.com##.td-footer-ad
+webdunia.com##.ad_in_between_art
+webdunia.com##.full_ads_block
 webextension.org###adb
 webextension.org##.adb
 webextension.org##body > div:not([class]):not([id]):has(> div[style] > div[style] > ins.adsbygoogle)
@@ -78311,7 +78311,7 @@ wykop.pl##.lisek-app
 wykop.pl##a[href^="https://www.wykop.pl/adverts"]
 wykop.pl##body .pub-slot-wrapper
 wykop.pl##div[id^="bmone2n-"]
-wykop.pl##section[class*="--"]:has(> .wrapper > a[href*="clk.tradedoubler.com"])
+wykop.pl##section[class]:has(> .wrapper:only-child > a[href*="clk.tradedoubler.com"])
 wykop.pl#%#(()=>{const t={apply:(t,e,r)=>{const o=r[0]&&"href"===r[0],n=r[1];if(e&&e instanceof HTMLAnchorElement&&o&&n&&n.includes?.("https://wykop.pl/api/v3/ads/redirect?data="))try{const t=new URL(n).searchParams.get("data"),e=atob(t),o=JSON.parse(e),p=decodeURIComponent(o.target_url);(t=>{let e;try{e=new URL(t)}catch(t){return!1}return"http:"===e.protocol||"https:"===e.protocol})(p)&&(r[1]=p)}catch(o){return Reflect.apply(t,e,r)}return Reflect.apply(t,e,r)}};window.Element.prototype.setAttribute=new Proxy(window.Element.prototype.setAttribute,t)})();
 wykop.pl#%#//scriptlet('remove-class', 'screening', 'body.screening')
 wykop.pl#?##itemsStream > .link:has(a[href^="http://www.wykop.pl/reklama"])
@@ -84133,6 +84133,7 @@ zzzyk.com###Tinfo
 ||convertflow.co^*/visitors/
 ||converti.se^$third-party
 ||convertkit.com^*/visit
+||cookiechimp.com/api/v1/visitors
 ||cookieless.tech^$third-party
 ||cookiescript.info^$third-party
 ||cookpad.com/*/activity_logs
@@ -84986,6 +84987,7 @@ zzzyk.com###Tinfo
 ||e3ol.com/inc/
 ||e9377f.com^$redirect=noopmp3-0.1s,domain=eastday.com
 ||e9377f.com^$rewrite=abp-resource:blank-mp3,domain=eastday.com
+||ea-mct-live.com/revsdk.kes.KinesisEvent/
 ||ea-tube.com/i2/
 ||ea3w.com/pv.js
 ||eacla.com^$third-party
@@ -87930,6 +87932,7 @@ zzzyk.com###Tinfo
 ||jobsora.com/img/banner/
 ||jobtarget.com/distrib_pages/
 ||jobvite.com/analytics.js
+||jobzhub.store/nt.js
 ||joemonster.org/build/js/prebid_*.js
 ||joggo.run/api/events
 ||johnlewis.com/browser-performance/
@@ -92711,6 +92714,7 @@ zzzyk.com###Tinfo
 ||sharecast.ws/cum.js
 ||sharecast.ws/fufu.js
 ||sharecast.ws/p.js
+||sharechat.com/event-tracking-service/
 ||shareholder.com/track/
 ||shareit.com/affiliate.html$third-party
 ||sharesies.com/v1/identify
