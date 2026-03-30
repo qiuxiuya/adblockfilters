@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260330003038
-! Last modified: 2026/03/30 00:30:38
-! Blocked Filters: 99666
+! Version: 20260330100545
+! Last modified: 2026/03/30 10:05:45
+! Blocked Filters: 99674
 !
 ###AC_ad
 ###AD_160
@@ -24954,6 +24954,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/v/*.gif$stealth=referrer,xmlhttprequest,domain=player.bunny-frame.online
 @@/v/*.html$stealth=referrer,xmlhttprequest,domain=player.bunny-frame.online
 @@/video.m3u8$stealth=referrer,domain=missav.live
+@@/video.m3u8$stealth=referrer,domain=missav.ws
 @@/video/*$media,stealth=referrer,domain=douyin.com
 @@/video/*/index.m3u8?*&frame_commit=*&mw_pid=*&signature=$stealth=useragent
 @@/videos/*$domain=pornhub.com|pornhub.org|pornhub.net
@@ -28485,6 +28486,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||fotoblogia.pl^$generichide
 @@||fotopixel.es^$generichide
 @@||fotor.com.cn/static/web/share/js/
+@@||fourhoi.com^$image,stealth=referrer,domain=missav.ws
 @@||fox-url.com^$generichide
 @@||foxnews.com^$generichide
 @@||fplay.online/log_event$~third-party,xmlhttprequest
@@ -33690,6 +33692,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||softpedia.com^$generichide
 @@||software-on.com/wp-content/plugins/angwp2/assets/dev/js/advertising.js
 @@||software-on.com^$generichide
+@@||soundcore.com/metrics/gtd?id=$script,~third-party
 @@||sourcepointcmp.bloomberg.*/ccpa.js$script,domain=bloomberg.co.jp|bloomberg.com
 @@||sourcepointcmp.bloomberg.*/mms/get_site_data?$domain=bloomberg.co.jp|bloomberg.com
 @@||southpark.*^$stealth=ip
@@ -38086,7 +38089,7 @@ athlonsports.com##.is-fallback-player
 athlonsports.com##.m-fixedbottom-ad--container
 athlonsports.com##section[id^="phxoutbrain-"]
 athlonsports.com,autoblog.com,bikemag.com,bringmethenews.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,powder.com,surfer.com,thespun.com,thestreet.com,travelhost.com##.styles_headerAdSlot__f4Z0n
-athlonsports.com,autoblog.com,bringmethenews.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,surfer.com,thespun.com,travelhost.com,www.autoblog.com,www.thestreet.com##.exco-player-wrapper
+athlonsports.com,autoblog.com,bringmethenews.com,dengarden.com,mensfitness.com,mensjournal.com,parade.com,paradehomeandgarden.com,paradepets.com,pethelpful.com,surfer.com,thespun.com,thestreet.com,travelhost.com##.exco-player-wrapper
 athlonsports.com,bringmethenews.com,si.com##.is-exco-player
 athomedaily.com,atworkdaily.com##.ad-backing
 atlantablackstar.com,finurah.com,theshadowleague.com##.raptive-ddm-header
@@ -38279,7 +38282,6 @@ autoblog.com##.styles_container__C9F6R
 autoblog.com##[data-widget-id="AR_1"]
 autoblog.com##div[id^="ad-in_content-"]
 autoblog.com##div[style="min-height: 250px;"]
-autoblog.com##div[style="min-height:250px"]
 autoblog.md##div[class^="PREFIX"][data-prefix-close-buttontrackid]
 autoby.jp,daily.co.jp,j-town.net,wetteronline.de#%#//scriptlet('remove-node-text', 'script', '.slice(-2);return decodeURIComponent')
 autoby.jp,daily.co.jp,j-town.net,wetteronline.de$$script:contains(.slice(-2);return decodeURIComponent)
@@ -47538,7 +47540,6 @@ exeygo.com#@#ins.adsbygoogle[data-ad-client]
 exeygo.com#@#ins.adsbygoogle[data-ad-slot]
 exeygo.com,exe-links.com#%#//scriptlet('prevent-setTimeout', 'checkAdblockUser')
 exeygo.com,exe-links.com#@#.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
-exeygo.com,exe-links.com,mrproblogger.com,cuttyy.com,fc-lc.xyz,link4earn.com,atglinks.com,megaurl.in,megafly.in,tii.la,ckk.ai,xpshort.com,rajsayt.xyz,insurglobal.xyz,usanewstoday.club,cutp.in,try2link.com,filmyzilla-in.xyz,samaa-pro.com,earnme.club,adshort.*,adurly.cc,swzz.xyz,crazyblog.in,baominh.tech,seulink.online,ez4short.com,upshrink.com,beingtek.com,link.rota.cc,insuranceblog.xyz,webo.one,linkfly.io,coinadfly.com,ownurl.site,coinsurl.com,clk.ink,dl.tech-story.net,link.asiaon.top,xfiles.io,upfiles.*,dz-linkk.com,shorterall.com,promo-visits.site,shrink.icu,rshrt.com,tei.ai,exey.*,claimfreebits.com,jameeltips.us,turkdown.com,tui.click,short.food-royal.com,linkpoi.me,galaxy-link.space,finanzas-vida.com,linkebr.com,smoner.com,charexempire.com,forex-trnd.com,linkshorts.*,mycut.me,cuts-url.com,gainbtc.click,st23q.com,hotel.menjelajahi.com,ccurl.net,shrt10.com,shrinkforearn.in,seulink.net,modapk.link,miklpro.com,afly.pro,exe.app,adcorto.xyz,droplink.co,curto.win,linksfire.co,illink.net,ilinks.in,bitfly.io,imagenesderopaparaperros.com,url.namaidani.com,c-ut.com,4cash.me,shrinkme.in,fir3.net,link1s.net,apksvip.com,pkr.pw,shrinke.me,stfly.me,bolssc.com,cutdl.xyz,shortearn.in,linksly.co,link1s.*,tmearn.com,samapro.me,mondainai.moe,pnd.*,popimed.com,tipsforce.com,aii.sh,7r6.com,iir.ai,tii.ai,biroads.com,dz4link.com,linkad.in,fc.lc,rifurl.com,oncehelp.com,shortpaid.com,slink.bid,encurta.eu,leechpremium.link,readnnews.com,gplinks.co,memoo.xyz,linkviet.top,salez.site,caat.site,shortearn.eu,earnload.com,gplinks.in,stfly.io,eio.io,cutwin.com,uii.io,techbeast.xyz,zoom-link.com,short.pe,myhealthlytips.com,clik.pw,payskip.org,shrinkme.io,ex-foary.com,linkfinal.com,shrinkurl.org,exe.io,liclink.com,adsafelink.com,enrt.eu,lkop.me,suqdz.com,getlink.deadtoonsindia.net,bollyreveal.com,shrtfly.net,mysiterank.org#%#//scriptlet('set-constant', 'app_vars.force_disable_adblock', 'undefined')
 exophase.com##.ad-general
 exoticca.com##div[id^="add-banner"]
 expat.com##.ad-inside-list
@@ -58749,6 +58750,7 @@ listland.com##a[href^="https://shareasale.com/r.cfm?"]
 listoffreeware.com##.bannerimg
 listvpn.net#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 lite.qwant.com#?#.content > article.result:has(> p > span.ad)
+liteapks.com###ad-unit-1
 liteapks.net##p[style="font-size: 15px"].text-center.mb-2
 litecoin-faucet.com##.sticky-top
 litecoin-faucet.com##.sticky-top1
@@ -65514,6 +65516,7 @@ pastebin.com##iframe[src="/_lead_custom.php"]
 pastebin.com#?#div[style]:not([class]):not([id]) > .adsbyvli:first-child:upward(1)
 pastebin.pl##a[href^="https://www.binance.com/"] > img
 pastedownload.com##.uk-list > li:has(> .uk-label + span > a[rel][target="_blank"])
+pastee.dev##[href="https://buyvm.net"]
 pasteflash.sx#%#//scriptlet('prevent-requestAnimationFrame', 'blocked')
 pastehouse.com##.col-md-9 > .text-center > a[target="_blank"][rel="nofollow"] > img
 pastehouse.com#%#//scriptlet('abort-current-inline-script', 'document.write', 'Banner')
@@ -67583,7 +67586,6 @@ pornvideotop.com#%#//scriptlet("prevent-setTimeout", "location.href")
 pornwatchers.com##.wrap-spots
 pornwatchers.com,pornrabbit.com##.stage-promo
 pornwex.tv#%#//scriptlet('prevent-addEventListener', 'click', 'fp-screen')
-pornwex.tv,manhuarmtl.com,vidara.to,vidara.so,krakenfiles.com,streamix.so,livecamrips.*#%#//scriptlet('prevent-addEventListener', 'click', 'window.open')
 pornwex.tv,mypornhere.com##.footer-margin:has(> .content:only-child > .bottom-adv:only-child)
 pornwhite.com##.bottom-container:has(> div#bottom-banner1 > ins)
 pornwhite.com##.container-side > .item:has(> ins[data-zoneid])
@@ -77037,6 +77039,7 @@ twitch.tv##a[href="https://vk.com/bust3rshop"]
 twitch.tv##a[href^="http://ggrus.bet/"]
 twitch.tv##a[href^="https://ggbetpromo.com/"]
 twitch.tv##a[href^="https://ya.cc/"]
+twitch.tv##button[aria-label="Learn more about this ad"]
 twitch.tv##div[data-test-selector="channel_panel_test_selector"] > a[href^="http://bit.ly/"]
 twitch.tv##div[data-test-selector="channel_panel_test_selector"] > a[href^="https://bit.ly/"]
 twitch.tv#$#.video-player--stream-display-ad_lower-third { height: 100% !important; }
@@ -77076,6 +77079,7 @@ twojogrodek.pl#$#.pub_300x250.pub_300x250m.text-ad.textAd.text-ads.text-ad-links
 twojstyl.pl#$#.body--ad--sticky .main--header { top: 0 !important; }
 twoplayergames.org##.game-page-ad
 twpkinfo.com###div_close_cf
+twstalker.com#%#//scriptlet('abort-current-inline-script', 'Array.prototype.reduce', 'delete window[')
 twword.com##.gadBlock
 twxgct.com,xgcartoon.com,dailygh.com###video-top-ad
 txahz.com###archy_ad2
@@ -77263,6 +77267,10 @@ uhdpaper.com##.ad_bars
 uhuseries.com##a[target="_blank"][rel*="sponsored"]:not([href^="https://nav.cx/"]) > img
 uiadmin.net##.jump-linker
 uii.io,short.pe,clik.pw##div[style="z-index:99999;position:fixed;bottom:10px;left:50%;transform: translateX(-50%)"]
+uiil.ink##div[style="height:50px; text-align:center;"]
+uiil.ink#%#//scriptlet('remove-attr', 'onclick', 'button[onclick^="window.open("]')
+uiil.ink,exeygo.com,exe-links.com,mrproblogger.com,cuttyy.com,fc-lc.xyz,link4earn.com,atglinks.com,megaurl.in,megafly.in,tii.la,ckk.ai,xpshort.com,rajsayt.xyz,insurglobal.xyz,usanewstoday.club,cutp.in,try2link.com,filmyzilla-in.xyz,samaa-pro.com,earnme.club,adshort.*,adurly.cc,swzz.xyz,crazyblog.in,baominh.tech,seulink.online,ez4short.com,upshrink.com,beingtek.com,link.rota.cc,insuranceblog.xyz,webo.one,linkfly.io,coinadfly.com,ownurl.site,coinsurl.com,clk.ink,dl.tech-story.net,link.asiaon.top,xfiles.io,upfiles.*,dz-linkk.com,shorterall.com,promo-visits.site,shrink.icu,rshrt.com,tei.ai,exey.*,claimfreebits.com,jameeltips.us,turkdown.com,tui.click,short.food-royal.com,linkpoi.me,galaxy-link.space,finanzas-vida.com,linkebr.com,smoner.com,charexempire.com,forex-trnd.com,linkshorts.*,mycut.me,cuts-url.com,gainbtc.click,st23q.com,hotel.menjelajahi.com,ccurl.net,shrt10.com,shrinkforearn.in,seulink.net,modapk.link,miklpro.com,afly.pro,exe.app,adcorto.xyz,droplink.co,curto.win,linksfire.co,illink.net,ilinks.in,bitfly.io,imagenesderopaparaperros.com,url.namaidani.com,c-ut.com,4cash.me,shrinkme.in,fir3.net,link1s.net,apksvip.com,pkr.pw,shrinke.me,stfly.me,bolssc.com,cutdl.xyz,shortearn.in,linksly.co,link1s.*,tmearn.com,samapro.me,mondainai.moe,pnd.*,popimed.com,tipsforce.com,aii.sh,7r6.com,iir.ai,tii.ai,biroads.com,dz4link.com,linkad.in,fc.lc,rifurl.com,oncehelp.com,shortpaid.com,slink.bid,encurta.eu,leechpremium.link,readnnews.com,gplinks.co,memoo.xyz,linkviet.top,salez.site,caat.site,shortearn.eu,earnload.com,gplinks.in,stfly.io,eio.io,cutwin.com,uii.io,techbeast.xyz,zoom-link.com,short.pe,myhealthlytips.com,clik.pw,payskip.org,shrinkme.io,ex-foary.com,linkfinal.com,shrinkurl.org,exe.io,liclink.com,adsafelink.com,enrt.eu,lkop.me,suqdz.com,getlink.deadtoonsindia.net,bollyreveal.com,shrtfly.net,mysiterank.org#%#//scriptlet('set-constant', 'app_vars.force_disable_adblock', 'undefined')
+uiil.ink,pornwex.tv,manhuarmtl.com,vidara.to,vidara.so,krakenfiles.com,streamix.so,livecamrips.*#%#//scriptlet('prevent-addEventListener', 'click', 'window.open')
 uindex.org##[style*="border: 2px solid #ff4081; background: #fff0f6; padding: 14px;"]
 uindex.org##body > div[style="text-align: center; color: #cc5500; font-weight: bold;"]
 uindex.org##body > div[style^="text-align:"]:not([id]):not([class])
@@ -86873,6 +86881,7 @@ zzzyk.com###Tinfo
 ||crazyshit.com/aff/$subdocument
 ||crazyshit.com/js/pu^
 ||crazyshit.com/static/js/ab^
+||crcdn.org^$image,domain=uiil.ink
 ||crdroid.net/js/adblock-checker.min.js
 ||creaders.net*/ad_func.js
 ||creamgoodies.com/potd/
@@ -97643,7 +97652,6 @@ zzzyk.com###Tinfo
 ||twitter.com^*/log.json
 ||twivideo.net/templates/ajax_link_click.php
 ||twkan.com/js/otherad
-||twstalker.com/popunderufasssssk9.js
 ||twt-assets.washtimes.com^$script,domain=washingtontimes.com
 ||tx-live-cover.msstatic.com/huyalive/*/format,webp/$image
 ||txahz.com/static/image/tp/
