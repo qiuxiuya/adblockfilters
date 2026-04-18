@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260418005252
-! Last modified: 2026/04/18 00:52:52
-! Blocked Filters: 100934
+! Version: 20260418100048
+! Last modified: 2026/04/18 10:00:48
+! Blocked Filters: 100945
 !
 ###AC_ad
 ###AD_160
@@ -14830,6 +14830,7 @@
 ##a[href^="https://hot-growngames.life/"]
 ##a[href^="https://in.rabbtrk.com/"]
 ##a[href^="https://iqbroker.com/"][href*="?aff="]
+##a[href^="https://ismlks.com/"]
 ##a[href^="https://jaxofuna.com/"]
 ##a[href^="https://join.bannedsextapes.com/track/"]
 ##a[href^="https://join.dreamsexworld.com/"]
@@ -31395,7 +31396,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||okfirenze.com/*/app/assets/js/prebid-ads.js
 @@||oklivetv.com/*&*=*&*&_=$xmlhttprequest,~third-party
 @@||oklivetv.com/*=*&$script,other,xmlhttprequest
-@@||okokserver.com/uploads/lesi/*.mp4$domain=huavod.net|huavod.com|huaren.live
+@@||okokserver.com/uploads/lesi/*.mp4$domain=huavod.net|huavod.com|huaren.live|huavod.top
 @@||oktatas.hu^$stealth=dpi
 @@||okteve.com/*&*=*&*&_=$xmlhttprequest,~third-party
 @@||olacast.live^$stealth=referrer
@@ -36144,8 +36145,8 @@ advocate.com##.bigbox_top_ad-wrap
 advocate.com##.block-heremedia-ads
 advocate.com##.partners__container
 advocate.com,anandtech.com,out.com,sciencefocus.com##.jwplayer
+advocate.com,audacy.com,good.is,out.com,papermag.com,pride.com##.topbarplaceholder
 advocate.com,bestlifeonline.com,good.is,out.com,pride.com##.placeholder-a-block
-advocate.com,good.is,out.com,papermag.com,pride.com##.topbarplaceholder
 advocate.com,out.com,pride.com##div[id^="sPost_Layout_Default_"]:has(> .ad_leaderboard_wrap)
 advocatekhoj.com##div[align="center"] > div[style="height: 95px;"]
 advrider.com##.ad-align
@@ -44219,7 +44220,7 @@ cyberscore.live##.relative.grid.h-\[168px\].grid-cols-\[1fr_300px_1fr\].gap-\[5p
 cyberscore.live##.wrapper-partner-rb
 cybersecurityconnect.com.au##.topmrec__default-banner
 cybersecuritynews.com##.has-text-align-center[style^="background:linear-gradient("][style*=",rgb(238,238,238)"]
-cybersecuritynews.com##.td-post-content > p.has-background:has(> a[href^="https://any.run/"])
+cybersecuritynews.com##.td-post-content > p.has-background:has(a[href^="https://any.run/"])
 cybersport.pl##.banner
 cyberwaters.com##.thevpnbox
 cyberwaters.com##aside[id^="custom_html-6"]
@@ -54208,7 +54209,6 @@ huaren.live##.action-ad
 huaren.live##.pause-love
 huaren.live,huavod.com#%#//scriptlet('prevent-setTimeout', 'bait.offsetHeight===0')
 huaren.live,huavod.com#@#.ad_unit
-huaren.live,huavod.com,huavod.net##a[href="/go/baba/1"]
 huaren.live,umbooks.com#%#//scriptlet('prevent-window-open')
 huaren.us##.article_title_ad_img
 huarenjie.com###LeftAd2
@@ -54216,10 +54216,11 @@ huarenjie.com###RightAd2
 huarenjie.com###cftoutiao
 huarenjie.net##div[style*="top: 50px;"]
 huavod.com##a[href^="https://lesi198.com"]
-huavod.net,huaren.live,huavod.com##div[id^="anti-adblock-"]
-huavod.net,huaren.live,huavod.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'showModal')
-huavod.net,huavod.com,huaren.live#%#//scriptlet('trusted-replace-node-text', 'script', 'ConFig', 'let ConFig', 'var ConFig')
-huavod.net,huavod.com,huaren.live#%#//scriptlet('trusted-set-constant', 'ConFig.config.ads', '{"pause":{"state":{}}}')
+huavod.top,huaren.live,huavod.com,huavod.net##a[href^="/go/baba/"]
+huavod.top,huavod.net,huaren.live,huavod.com##div[id^="anti-adblock-"]
+huavod.top,huavod.net,huaren.live,huavod.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'showModal')
+huavod.top,huavod.net,huavod.com,huaren.live#%#//scriptlet('trusted-replace-node-text', 'script', 'ConFig', 'let ConFig', 'var ConFig')
+huavod.top,huavod.net,huavod.com,huaren.live#%#//scriptlet('trusted-set-constant', 'ConFig.config.ads', '{"pause":{"state":{}}}')
 huawei.com#@#.ad-section
 huawei.com#@#.ad-wrap:not(#google_ads_iframe_checktag)
 hubcloud.club##.ads-btns
@@ -61619,6 +61620,7 @@ mixrootmods.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 mjakmalopolska.pl##.widget-advert_centralplacement
 mjakmalopolska.pl##div.text-center:has(> div.d-inline-block-not-important > small)
 mjzj.com##div[id^="sidebar-top-carouse"]
+mkfjbitxzlhijf*.top/$script,xmlhttprequest,third-party
 mkvcinemas.*###SH-Ads
 mkvcinemas.*##.code-block:has(a[title="mkvAnime"])
 mlb.com##.ad--article
@@ -62977,6 +62979,11 @@ mygoodstream.pw,pornyhd.com,pornxday.com,freeservice.info,22pixx.xyz,eurostreami
 myguidecyprus.com##div[class^="mdAd"]
 myhack58.com##.adv32
 myhentai.us##.tracking-btn
+myhentaicomics.com##.featured-manga, .header-spot, .pagination-image {min-height:0 !important;}
+myhentaicomics.com##.item.image-block
+myhentaicomics.com##.outstrea
+myhentaicomics.com##[style$="height: 250px; display: inline-block;"]
+myhentaicomics.com#$#.featured-manga, .header-spot, .pagination-image { min-height:0 !important; }
 myhentaicomics.com#$#.header-container > div.header-top + div.header-bottom { height: auto !important; }
 myhentaicomics.com#$#.header-image { min-height: 0 !important; }
 myhentaigallery.com##.comics-grid > li.item.image-block
@@ -72335,6 +72342,7 @@ slant.co##._SummaryPageSponsoredOptionView
 slashdot.org###announcement
 slashdot.org###mon-sticky-div
 slashdot.org###slashdot_deals
+slashdot.org###vibe-code
 slashdot.org###vibe-coding-bar
 slashdot.org##.ad-blocked-newsletter
 slashdot.org##.deals-wrapper
@@ -72346,6 +72354,8 @@ slashdot.org#?#.fhitem:has(> header > div.ntv-sponsored-disclaimer)
 slashdot.org#?#.grid_24:contains(Featured Content)
 slashdot.org#?#.grid_24:has-text(Featured Content)
 slashdot.org,sourceforge.net###bolt-coding-bar
+slashdot.org,sourceforge.net###mongo-stick-div
+slashdot.org,sourceforge.net###perplexity-coding-bar
 slashfilm.com###primis-container
 slashfilm.com##.under-art
 slashfilm.com,healthdigest.com###primis-container
@@ -88618,7 +88628,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eazydata.io^$third-party
 ||ebay.com/delstats/
@@ -90840,6 +90849,7 @@ zzzyk.com###Tinfo
 ||huarenjie.com/attachment/myfiles/
 ||huavod.com/player/$replace=/let ConFig/var ConFig/,document,subdocument
 ||huavod.net/player/$replace=/let ConFig/var ConFig/,document,subdocument
+||huavod.top/player/$replace=/let ConFig/var ConFig/,document,subdocument
 ||hub.reacti.co/index.js
 ||hubdigitalads.com^$third-party
 ||hubspot.com/analytics/
@@ -91579,12 +91589,14 @@ zzzyk.com###Tinfo
 ||ishowx.com/www/2015/js/top.js
 ||isky.ltd/skin/js/ad.js
 ||islandecho.co.uk/uploads/*/vipupgradebackground.jpg$image
+||ismlks.com^$popup
 ||isnews.it/images/banners/$domain=isnews.it
 ||isohunt.app/a/b.js
 ||isohunt.lol/k.js
 ||isohunt2.net/nordvpn/
 ||isohuntx.com/vpn/$popup
 ||isproxy.eu^$script,domain=mahitimanch.in
+||isready2.online^$popup
 ||isso.com.cn/club/adv
 ||isso.com.cn^*/A-D/
 ||istlnkcl.com^$popup
@@ -93026,7 +93038,6 @@ zzzyk.com###Tinfo
 ||mail.ru/k?
 ||mail.yahoo.com/f/track/
 ||mail.yahoo.com/n/gemini_api/?adCount=
-||mailinbox.com.br^$third-party
 ||maillist-manage.eu/wa/actionlogger?
 ||mairdumont.com^$third-party
 ||majorgeeks.com/images/mg/ads/
@@ -97536,7 +97547,7 @@ zzzyk.com###Tinfo
 ||static.newsnation.in/images/webtech.gif
 ||static.okokserver.com/js/anti/adblocker.js
 ||static.okokserver.com/uploads/lesi/$image,domain=huaren.live|huavod.com
-||static.okokserver.com/uploads/lesi/$xmlhttprequest,redirect=nooptext,domain=huaren.live|huavod.net|huavod.com
+||static.okokserver.com/uploads/lesi/$xmlhttprequest,redirect=nooptext,domain=huaren.live|huavod.net|huavod.com|huavod.top
 ||static.okokserver.com/uploads/lesi/lesi.mp4$media
 ||static.okokserver.com^$media,domain=huaren.live
 ||static.olelive.com/upload/site/*/*.gif
