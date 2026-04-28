@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260428011908
-! Last modified: 2026/04/28 01:19:08
-! Blocked Filters: 98024
+! Version: 20260428103455
+! Last modified: 2026/04/28 10:34:55
+! Blocked Filters: 98029
 !
 ###AC_ad
 ###AD_160
@@ -26855,6 +26855,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||chpadblock.com^|$xmlhttprequest,domain=keyrblx.com
 @@||cinema.pia.co.jp/img/ad/$image,~third-party
 @@||cintateknologi.com^$generichide
+@@||cizgipass100.online/embed$subdocument,stealth=referrer,domain=yeniwatch.net.tr
 @@||claimfreecoins.io^$generichide
 @@||claimsatoshi.xyz^$generichide
 @@||claimtrx.com^$generichide
@@ -38094,7 +38095,6 @@ babez.live##aside[aria-label="Notification Ad"]
 babez.live#%#//scriptlet('set-cookie', 'enter', 'true')
 babia.to##body > div[id][style="display: block;"]
 babia.to#%#//scriptlet('remove-node-text', 'script', '!document.getElementById(btoa(')
-babia.to,anime-sharing.com,macheforum.com,cybertruckownersclub.com,tdpri.com,xbunker.nu,broncosportforum.com,jeepgladiatorforum.com,titsintops.com,nudostar.com,satelliteguys.us,forums.macrumors.com,androidrepublic.org##.samCodeUnit
 babiato.tech#%#//scriptlet('prevent-setTimeout', 'show', '10*1000')
 babla.*###topslot-container
 baby-kingdom.com##.right5
@@ -42289,6 +42289,7 @@ cosxplay.com##div[class^="related-boxes-footer"]
 cosxplay.com##div[class^="textovka"]
 cosxplay.com#?#.order-1:has(> div[class^="inside-list-boxes"])
 cosxplay.com#?#.order-2:has(.duration-ad)
+cotilleando.com,babia.to,anime-sharing.com,macheforum.com,cybertruckownersclub.com,tdpri.com,xbunker.nu,broncosportforum.com,jeepgladiatorforum.com,titsintops.com,nudostar.com,satelliteguys.us,forums.macrumors.com,androidrepublic.org##.samCodeUnit
 cotton.pink##.adsbyfalcon
 coub.com##.coub--promoted
 coub.com##.coub__banner-timeline
@@ -46711,6 +46712,7 @@ fcbarca.com#?#.article__content div[style]:has(> div:contains(/^REKLAMA$/))
 fcbarca.com#?#.news__list > div[style]:has(> div[style] > div:contains(/^REKLAMA$/))
 fcbarcelona.dk#@##article_ad
 fcbayern.com##div[data-upscore-zone^="content(SPONSORBANNER)"]
+fcenxe*.top/$script,xmlhttprequest,third-party
 fcinter.pl##.kompendium > a[href="https://www.iparts.pl"]
 fcinter.pl##a[href^="https://online.efortuna.pl/page?key="] > img
 fcinternews.it###masthead
@@ -47971,6 +47973,7 @@ fotor.com###main > div > div:has(> div:empty:only-child)
 fotor.com##.infoBox
 fotor.com#$?##main > div > div + div:matches-property(offsetWidth=160) { remove: true; }
 fotor.com#%#//scriptlet('prevent-setTimeout', 't.hasAdBlock')
+foulembeds.live,smksports.*,fileditchfiles.me,strumyk.cfd,dorawatch.one,streamingworld.xyz,streami.su,streamed.pk,streamed.*,visualnewshub.com,cloudnestra.com,cloudfam.io,thepibay.*,bypass.city,eztvx.to,ext.to,vidsrc.cc,sanet.st,yifysubtitles.ch,yts.bz,vinovo.to,livesporthub.shop,dstelemundo.site,7fractals.icu,epicplayplay.cfd,goalstreamer.shop,streameast7.com,buffztreamz.shop,rippleplay.shop,shd247.click,antenasport.top,gamestrend.net,cloudnestra.com,exposestrat.com,embedsports.top,seir-sanduk.com,embedtv-5.icu,daddylive3.com,sterham.net,animeunity.*,vixcloud.*,buffsports.io,soccerstreams7.com,loadvid.com,telewizjada.top,kaa.to,ogladaj.in,istreameast.app,streamingnow.mov,watchug.to,primewire.tf,worldsports.st,filecrypt.cc,veplay.top,colegialasdeverdad.*,crackstreams.cx,anime4i.com,cuttyy.com,puffytr.com,anizm.*,anizle.*#%#//scriptlet('abort-on-property-read', 'aclib')
 founderoo.co##.ads-block_component
 foursquare.com#?#.sidebarRelatedVenues > .newRelatedVenuesSet:has(> div[id^="div-gpt-"])
 fow.lol###video-ad-content
@@ -49651,6 +49654,7 @@ golfchannel.com#$#header.navigation { top: 0!important; }
 golfdigest.com##.adSlot
 golfdigest.com##.midslot
 golfdigest.com##.o-ArticleRecirc
+golfdigest.com##.river-ad-full
 golfgalaxy.com###sponsored-product
 golfgalaxy.com##div.hmf-position-relative:has(.sponsored)
 golflink.com##.desktop-top-fixed-ad
@@ -55054,8 +55058,6 @@ justwatch.com##.offer-container:has(.promotion-row_container)
 justwatch.com##.offers-grid
 justwatch.com##.offers-list
 justwatch.com##.promoted-buybox
-justwatch.com##.sponsored-recommendation
-justwatch.com##.title-list-grid > *:has([class^="sponsored-recommendation"])
 justwatch.com##publication-block
 justwatch.com#$#.filter__wrapper--fixed { top:50px!important; }
 justwatch.com#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links { display:block!important; }
@@ -62110,6 +62112,7 @@ niuacc.com##.botLm-container
 niuacc.com##.masks
 niuacc.com##.yure
 niusnews.com##a[href^="https://www.niusnews.com/index.php/main/gotoBanner/"]
+niuyank.top##a.centtext
 niuyankan.top###content > a
 nivod2.com,nivod2.tv,nivod4.com,nivod5.com##.img-list > .img-item:has(> a[href*=".ad_click"])
 nivod2.com,nivod2.tv,nivod4.com,nivod5.com##a.focus_title_inner[href*=".ad_click"]
@@ -70347,7 +70350,6 @@ smithsonianmag.com##.special-offers-from-advertisers-ad-showcase
 smithsonianmag.com#$#body > :is(article, .largemasthead)[style^="margin-top:"] { margin-top: 0 !important; }
 smithsonianmag.com#$#body > header[style^="top:"] { top: 0 !important; }
 smjb.net##div[style*="height: 50%"]
-smksports.*,fileditchfiles.me,strumyk.cfd,dorawatch.one,streamingworld.xyz,streami.su,streamed.pk,streamed.*,visualnewshub.com,cloudnestra.com,cloudfam.io,thepibay.*,bypass.city,eztvx.to,ext.to,vidsrc.cc,sanet.st,yifysubtitles.ch,yts.bz,vinovo.to,livesporthub.shop,dstelemundo.site,7fractals.icu,epicplayplay.cfd,goalstreamer.shop,streameast7.com,buffztreamz.shop,rippleplay.shop,shd247.click,antenasport.top,gamestrend.net,cloudnestra.com,exposestrat.com,embedsports.top,seir-sanduk.com,embedtv-5.icu,daddylive3.com,sterham.net,animeunity.*,vixcloud.*,buffsports.io,soccerstreams7.com,loadvid.com,telewizjada.top,kaa.to,ogladaj.in,istreameast.app,streamingnow.mov,watchug.to,primewire.tf,worldsports.st,filecrypt.cc,veplay.top,colegialasdeverdad.*,crackstreams.cx,anime4i.com,cuttyy.com,puffytr.com,anizm.*,anizle.*#%#//scriptlet('abort-on-property-read', 'aclib')
 smksports.*,movish.net,vidara.so,vidara.to,viduro.top,fithelptipz.com,tpi.li,wmovies.one,instalker.org,twstalker.com,file4go.lol,usescarlet.com,cloudfam.io,m1xdrop.*,m1xdrop.com,doramasonline.org,hexload.com,myflixerz.to,3xyaoi.com,movies2watch.tv,livesporthub.shop,dstelemundo.site,bulksportsstores.top,yeahstreams.com,goalstreamer.shop,alphastreams.online,buffztreamz.shop,surfg.org,rippleplay.shop,yrtourguide.com,technons.com,tournguide.com,digiztechno.com,shrtslug.biz,seeflix.to,vidfast.pro,deportes.ksdjugfsddeports.com,m1xdrop.net,mixdrop23.net,vipbox.lc,omuzaani.me,mdy48tn97.com,embedtv.net,dlhd.*,capo6play.com,zorroplay.xyz,luluvdoo.com,vecloud.eu,cordneutral.net,thedaddy.*,fnjplay.xyz,yoxplay.xyz,streamlord.com,giize.com,viprow.nu,dopebox.to,zonatmo.com,sportshub.stream#%#//scriptlet('abort-current-inline-script', 'EventTarget.prototype.addEventListener', 'delete window')
 smksports.live#%#//scriptlet('prevent-addEventListener', 'load', 'checkAdBlock')
 smksports.live#@#.ad-unit:not(.textads)
@@ -82800,6 +82802,7 @@ zzzyk.com###Tinfo
 ||api.bitchute.com/slot2/
 ||api.blink.net/a/
 ||api.blockchain.info/explorer-gateway/advertisements
+||api.bluecore.app/api/track/
 ||api.bo3.gg/api/v*/ad_
 ||api.bo3.gg/api/v1/ad_baners
 ||api.bo3.gg/api/v1/ad_banners
@@ -84543,6 +84546,7 @@ zzzyk.com###Tinfo
 ||cdn.pelcro.com/js/bab/min.js$domain=livenewsus.com
 ||cdn.performit.club/scripts/nwm-pw.min.js
 ||cdn.ping0.cc/images/ax/*.gif$~third-party
+||cdn.pmweb.com.br/df/tag.js
 ||cdn.porngames.tv/images/skyscrapers
 ||cdn.porngames.tv/images/videos
 ||cdn.pornhaven.ai/design/ads/
@@ -85890,6 +85894,7 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eazydata.io^$third-party
 ||ebay.com/delstats/
