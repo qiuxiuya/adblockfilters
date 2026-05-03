@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260503004158
-! Last modified: 2026/05/03 00:41:58
-! Blocked Filters: 101476
+! Version: 20260503103333
+! Last modified: 2026/05/03 10:33:33
+! Blocked Filters: 101486
 !
 ###AC_ad
 ###AD_160
@@ -22574,6 +22574,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 12306.cn###slideRBox
 12306.cn##.fix-yh
 12306.cn,club.pchome.net,qinbing.cn###slideBox
+123865.com##.bg_svip_block_ads
+123865.com#%#//scriptlet('prevent-window-open')
 123animes.*##div[id][style^="position: fixed; inset: 0px; z-index: 2147483647;"]
 123animes.*,europixhd.pro,ssrmovies.win,gdriveplayer.*,vidsrc.*,a2zapk.com,gomoviesfree.page,gomo.to#%#//scriptlet("abort-on-property-write", "glxopen")
 123av.com##.w300
@@ -61376,6 +61378,9 @@ metbuat.az##div[style="margin-top: 10px; text-align: center"]
 metbuat.az#$#.tnav { margin-top: auto!important; }
 metbuat.az#?#body > .container.z-index-up:has(.z-index-up a[href][target="_blank"])
 meteo.pl###wtg_sg_bill_top
+meteo60.fr,robbreport.com,torontosun.com,saikyo-jump.com,livescience.com,elnacional.cat,parade.com,athlonsports.com,edmontonsun.com,canoe.com,driving.ca,vancouversun.com,seriouseats.com,alfalfalfa.com,aussieaudiomart.com,ukaudiomart.com,usaudiomart.com,canuckaudiomart.com#%#//scriptlet('remove-node-text', 'script', 'html-load.com')
+meteo60.fr,robbreport.com,torontosun.com,saikyo-jump.com,livescience.com,elnacional.cat,parade.com,hestarphoenix.com,leaderpost.com,athlonsports.com,edmontonsun.com,calgaryherald.com,theprovince.com,canoe.com,driving.ca,vancouversun.com,financialpost.com,followfollow.com,seriouseats.com,alfalfalfa.com,aussieaudiomart.com,ukaudiomart.com,usaudiomart.com,canuckaudiomart.com#%#//scriptlet('trusted-replace-argument', 'HTMLScriptElement.prototype.setAttribute', '1', 'replace:/.+(error-report|new Promise|:window|&&window,|void 0\]|html-load\.com[\s\S]*_onerror).+//g')
+meteo60.fr,torontosun.com,saikyo-jump.com,livescience.com,elnacional.cat,parade.com,athlonsports.com,edmontonsun.com,canoe.com,driving.ca,vancouversun.com,seriouseats.com,alfalfalfa.com,aussieaudiomart.com,ukaudiomart.com,usaudiomart.com,canuckaudiomart.com#%#//scriptlet('remove-node-text', 'script', '/:\(\)=>eval/')
 meteoblue.com##.ad1-box
 meteoblue.com##main > div > div > div > div[style="width: 300px; height: 250px;"]
 meteocentrum.cz###adform_leaderboard
@@ -68472,6 +68477,10 @@ poscigi.pl##.bsaPopupWrapperBg
 posemaniacs.com##.h-\[250px\]
 posemaniacs.com##.tabletL\:w-\[728px\]
 positanonotizie.it###adblockwarning
+positioniseverything.net###pie-site-wrapper
+positioniseverything.net##.yorker-top
+positioniseverything.net##div.yorker-box
+positioniseverything.net#%#//scriptlet('abort-current-inline-script', 'atob', 'showModal')
 post-gazette.com###benn-poll-iframe-container
 post-gazette.com##.pg-adwrapper-300x250
 post-gazette.com##.pg-mobile-adhesionbanner
@@ -69785,6 +69794,9 @@ rat.xxx,zbporn.tv##.cs-holder
 rat.xxx,zbporn.tv##.top-spot
 ratedgross.com#?#.block-video > .table:has(> .spot)
 ratedgross.com#?#.list-videos > div > .place:has(> .spot)
+ratehub.ca###main-content > div > section:has([class^="Ad__Container-sc-"])
+ratehub.ca###portalLeaderboardAd
+ratehub.ca###sidebar-section-advertisement
 ratemycourses.io##[href^="https://www.essaypal.ai"]
 ratemymelons.com##.bannus
 ratemyprofessors.com##.AdNoBid__AdContainer-sc-7ofdbw-0
@@ -70508,8 +70520,6 @@ roadtovr.com##footer > div.td-post-content
 robbreport.com###icon-sprite
 robbreport.com,scribd.com#%#//scriptlet('remove-node-text', 'script', 'await eval')
 robbreport.com,torontosun.com,saikyo-jump.com,elnacional.cat,parade.com,thestarphoenix.com,leaderpost.com,athlonsports.com,edmontonsun.com,calgaryherald.com,theprovince.com,notebookcheck.*,driving.ca,vancouversun.com,financialpost.com,followfollow.com,seriouseats.com,alfalfalfa.com,pcguide.com,thingiverse.com,welt.de,edmontonjournal.com,itavisen.no,russianmachineneverbreaks.com,geo.fr,langenscheidt.com,urldecoder.org,base64decode.org,deadline.com,crosswordsolver.com,natalie.mu,daily.co.jp,egitim.net.tr,9gag.com,hb-nippon.com,ukaudiomart.com,windsorstar.com,akinator.com,pons.com,autobild.de,odyclub.com,dict.cc,respublika.lt,si.com,stocktwits.com,zeilen.nl,wielerrevue.nl,speisekarte.de,ldoceonline.com,sankei.com,oxfordlearnersdictionaries.com,dictionary.cambridge.org,nishinippon.co.jp,gamewith.jp,glutenfreeonashoestring.com,subaruforester.org,tsxclub.com,civinfo.com,2coolfishing.com,1911forum.com,stylegirlfriend.com,toyokeizai.net,madaboutfood.co,galonamission.com,iheartnaptime.net,momontimeout.com,31daily.com,easydessertrecipes.com,scribd.com,dessertsonadime.com,skinnytaste.com,thehomesteadinghippy.com,gigafile.nu,trilltrill.jp,intoindiegames.com,liveandletsfly.com,traicy.com,stuckonsweet.com,worldhistory.org,kuruma-news.jp,1lumen.com,bluearchive.gg,ttforum.co.uk,newatlas.com,game8.jp,motorradfrage.net,sportlerfrage.net,finanzfrage.net,reisefrage.net,gesundheitsfrage.net,computerfrage.net,autofrage.net,wholesomeyum.com,gutefrage.net,sportico.com,wwd.com,neoseeker.com,yahoo.com,doviz.com,baseballchannel.jp,programme-tv.net,tz.de,ygosu.com,etoday.co.kr,sportalkorea.com,slashdot.org,dogdrip.net,smsonline.cloud,infinityfree.com#%#(()=>{const e=/html-load\.com|loader\.min\.js|andwonderful\.com\/safe\.min\.js|shieldload\.|:\/\/loader\.|core\.js/,t={filter:Array.prototype.filter,includes:String.prototype.includes,regexTest:RegExp.prototype.test},o=()=>(new Error).stack,r=o=>t.regexTest.call(e,o),l={construct:(e,l,n)=>{const c=o();return r(c)&&l[0]&&t.includes.call(l[0],"adshield")&&(l[0]=["(function(){})();"]),Reflect.construct(e,l,n)}};window.Blob=new Proxy(window.Blob,l);const n={apply:(e,l,n)=>{const c=o();return r(c)&&n[0]&&t.includes.call(n[0],"new Error")&&(n[0]=()=>{}),Reflect.apply(e,l,n)}};window.setTimeout=new Proxy(window.setTimeout,n);const c={apply:(e,l,n)=>{const c=o();return r(c)&&n[0]&&l?.includes?.("setTimeout")&&(l=t.filter.call(l,(e=>!t.includes.call(e,"setTimeout")))),Reflect.apply(e,l,n)}};window.Array.prototype.filter=new Proxy(window.Array.prototype.filter,c)})();
-robbreport.com,torontosun.com,saikyo-jump.com,livescience.com,elnacional.cat,parade.com,athlonsports.com,edmontonsun.com,canoe.com,driving.ca,vancouversun.com,seriouseats.com,alfalfalfa.com,aussieaudiomart.com,ukaudiomart.com,usaudiomart.com,canuckaudiomart.com#%#//scriptlet('remove-node-text', 'script', 'html-load.com')
-robbreport.com,torontosun.com,saikyo-jump.com,livescience.com,elnacional.cat,parade.com,hestarphoenix.com,leaderpost.com,athlonsports.com,edmontonsun.com,calgaryherald.com,theprovince.com,canoe.com,driving.ca,vancouversun.com,financialpost.com,followfollow.com,seriouseats.com,alfalfalfa.com,aussieaudiomart.com,ukaudiomart.com,usaudiomart.com,canuckaudiomart.com#%#//scriptlet('trusted-replace-argument', 'HTMLScriptElement.prototype.setAttribute', '1', 'replace:/.+(error-report|new Promise|:window|&&window,|void 0\]|html-load\.com[\s\S]*_onerror).+//g')
 robinwidget.org##.banner-1
 robinwidget.org##.banner-2
 robinwieruch.de###gatsby-focus-wrapper div[class^="withBorder-module"]:has(> div[class^="index-module"] small > a[href^="https://amzn.to/"])
@@ -77351,7 +77361,6 @@ toronto.citynews.ca##.big-box-ad
 toronto.citynews.ca##div[data-ad-type]
 torontosun.com,athlonsports.com,edmontonsun.com,driving.ca,vancouversun.com$$script:contains(window.adshield)
 torontosun.com,buchstaben.com,livescience.com,elnacional.cat,parade.com,athlonsports.com,edmontonsun.com,driving.ca,vancouversun.com,aussieaudiomart.com,ukaudiomart.com,usaudiomart.com,canuckaudiomart.com#%#//scriptlet('remove-node-text', 'script', '/:\(\)=>eval/')
-torontosun.com,saikyo-jump.com,livescience.com,elnacional.cat,parade.com,athlonsports.com,edmontonsun.com,canoe.com,driving.ca,vancouversun.com,seriouseats.com,alfalfalfa.com,aussieaudiomart.com,ukaudiomart.com,usaudiomart.com,canuckaudiomart.com#%#//scriptlet('remove-node-text', 'script', '/:\(\)=>eval/')
 toros.co##.trtbl
 torquenews.com##.adsense
 torquenews.com##.header-wrapper
@@ -87654,7 +87663,7 @@ zzzyk.com###Tinfo
 ||cgjnf.com/movies/disk3/adsbanner/$media,redirect=noopmp4-1s
 ||cgtn.com/api/collect/
 ||ch3ngl0rd.com/hit/
-||chachefa.com/asdfasdfqwer/
+||chachefa.com^*.js?v=
 ||chahua.org/aimg/
 ||chakd.com/images/xitie160x60.gif
 ||chalkplayground.co^$popup
@@ -91395,7 +91404,7 @@ zzzyk.com###Tinfo
 ||hstats*.hepsiburada.com^
 ||hsyipos.com/template/mxone/html_tplmx/vod/*.gif
 ||htm*.hepsiburada.com^
-||html-load.com^$important,domain=nikkansports.com|j-cast.com|picksandparlays.net|ranking.net|minkou.jp|aucfree.com|motor-talk.de|373news.com|northantstelegraph.co.uk|tavovaikas.lt|agriculture.com|travelandleisure.com|learnreligions.com|verywellhealth.com|statecollege.com|dayspedia.com|aussieaudiomart.com|ukaudiomart.com|usaudiomart.com|canuckaudiomart.com|thestreet.com|kurashiru.com|micechat.com|seriouseats.com|followfollow.com|financialpost.com|vancouversun.com|driving.ca|theprovince.com|calgaryherald.com|edmontonsun.com|athlonsports.com|leaderpost.com|thestarphoenix.com|parade.com|elnacional.cat|livescience.com|saikyo-jump.com|torontosun.com|robbreport.com|thelayoff.com|preventionrd.com
+||html-load.com^$important,domain=nikkansports.com|j-cast.com|picksandparlays.net|ranking.net|minkou.jp|aucfree.com|motor-talk.de|373news.com|northantstelegraph.co.uk|tavovaikas.lt|agriculture.com|travelandleisure.com|learnreligions.com|verywellhealth.com|statecollege.com|dayspedia.com|aussieaudiomart.com|ukaudiomart.com|usaudiomart.com|canuckaudiomart.com|thestreet.com|kurashiru.com|micechat.com|seriouseats.com|followfollow.com|financialpost.com|vancouversun.com|driving.ca|theprovince.com|calgaryherald.com|edmontonsun.com|athlonsports.com|leaderpost.com|thestarphoenix.com|parade.com|elnacional.cat|livescience.com|saikyo-jump.com|torontosun.com|robbreport.com|thelayoff.com|preventionrd.com|meteo60.fr
 ||html5games.com/event/
 ||htoptracker11072023.com^$popup
 ||htqyy.com/kiees/
@@ -98009,6 +98018,7 @@ zzzyk.com###Tinfo
 ||static.crazyshit.com/js/im/im.js
 ||static.crocotube.com/cb/
 ||static.depositfiles.com/js/utar*.js$important
+||static.dhsz.cn^$image,domain=123865.com
 ||static.digitalgo.click/scripts/adsbydigitalgo.js
 ||static.doyouhike.net/partner/
 ||static.elektroda.pl/html5/pcim/desktop/index.html
