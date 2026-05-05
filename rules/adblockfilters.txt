@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260505012716
-! Last modified: 2026/05/05 01:27:16
-! Blocked Filters: 101653
+! Version: 20260505102646
+! Last modified: 2026/05/05 10:26:46
+! Blocked Filters: 101659
 !
 ###AC_ad
 ###AD_160
@@ -47573,6 +47573,7 @@ espn.co.uk##.BettingOdds
 espn.com##.mod-outbrain
 espncricinfo.com##.adSlotCnt
 espncricinfo.com##.ci-story-content-ad
+espncricinfo.com##.ds-flex-none > div.ds-w-full:has(> div.ds-p-0 span.ci-bet365-odd-column)
 esporno.net##.row > li:has(> a[rel="nofollow sponsored"])
 esporno.net,eshentai.tv##.h-block-120
 esporno.net,eshentai.tv##.h-block-250
@@ -60444,6 +60445,7 @@ mail.yahoo.com#?#li:has(a[href^="https://api.taboola.com/"])
 mailgen.biz#%#//scriptlet('prevent-setTimeout', 'enable_ad_block_detector')
 mailonsunday.co.uk##.billboard_wrapper
 mainichi.jp###PC-english-rec1
+maison-et-domotique.com##.sidebar .widget_media_image
 maiziedu.com##.msg
 majalahikan.com##.adsbygoogle
 majesy.com,magesy.eu#%#//scriptlet("set-constant", "jQuery.adblock", "false")
@@ -64764,6 +64766,7 @@ noon.com##.PdpRecommendations-module-scss-module__e4nPqG__recosWrapper
 noon.com##.ProductDetailsDesktop-module-scss-module__AYN9Ya__topSlotWrapper
 noon.com##.visibilitySensorWrapper:has(.adBannerModule)
 noon.com##[data-qa="plp-product-box"]:has([class^="SponsoredTag"])
+noon.com##div[data-qa="plp-product-box"]:has(div[class^="STag-module-"])
 noon.com#?#.swiper-slide:contains(Sponsored)
 noon.com#?#.swiper-slide:has-text(Sponsored)
 noon.com#?#span[class*="productContaine"]:has(div:contains(Sponsored))
@@ -66768,6 +66771,7 @@ pexels.com##.inline-ads
 pexels.com##.js-sponsored-photos
 pexels.com##.partner-box
 pexels.com##[data-testid="column"] [data-testid="item"]:has([class*="AIGCAdShared"])
+pexels.com##[data-testid="column"] [data-testid="item"]:has([data-label*="Sponsored"])
 pexels.com##[data-testid="column"] [data-testid="item"]:has([data-text="Sponsored Photos"])
 pexels.com##[data-testid="column"] [data-testid="item"]:has([data-title*="Sponsored"])
 pexels.com##a[href*=".istockphoto.com"]
@@ -67140,8 +67144,9 @@ pixabay.com##.show-gtty-item
 pixabay.com##.show-gtty-item > div[style="font-size:14px;color:#a5a8ab;margin:5px 9px"]
 pixabay.com##[class^="gettySponsored"]
 pixabay.com##div[class*="sponsoredWithResults"]
-pixabay.com##div[class="cell--UMz-x"]:has(button[aria-label="About this advertiser"])
 pixabay.com##div[class^="adPlacement"]
+pixabay.com##div[class^="cell--"]:has(button[aria-label="About this advertiser"])
+pixabay.com##div[class^="mrxz"]:has(button[aria-label="About this advertiser"])
 pixai.art##.content-start > .row-start-1:has(> a[href="https://go.getmogu.chat"])
 pixai.art#%#//scriptlet('json-prune', 'data.publicDynamicConfig.campaign.feed.*.[-].isAd.[=].true')
 pixeldrain.com##.skyscraper
@@ -89417,7 +89422,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eavesofefinegoldf.info^$popup
 ||eazydata.io^$third-party
@@ -93688,6 +93692,7 @@ zzzyk.com###Tinfo
 ||m.niupizhi.net/lokedpgdjs
 ||m.pianba.tv/ad/
 ||m.q1xs.com/17mb/script/wap.js
+||m.qishuba.com/jump/
 ||m.qiushuzw.com/9CB0D8A5/2dfc69b0d8a5.js
 ||m.shushu8.com/js/tongji.js?
 ||m.spookchat.com/Data.svc/getBanner?ctrl=
@@ -93713,6 +93718,7 @@ zzzyk.com###Tinfo
 ||m4ufree.com/images/dl.png
 ||ma-petite-recette.fr/visites
 ||maas-*.phunware.com^
+||mabipa.com^$third-party
 ||macacussimpson.top^$popup
 ||macd.cn/macd-topads.html
 ||macfans.org/vip/
