@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260509011151
-! Last modified: 2026/05/09 01:11:51
-! Blocked Filters: 102088
+! Version: 20260509103224
+! Last modified: 2026/05/09 10:32:24
+! Blocked Filters: 102097
 !
 ###AC_ad
 ###AD_160
@@ -38718,6 +38718,7 @@ avtosfer.az##div[class^="bannerArea"]
 avtosfer.az##div[class^="top_banner_"]
 avtosfer.az##iframe[src^="http://avtosfer.az/banner"]
 avvocatoandreani.it#@#.AdSense
+avweb.com##.advads-modal
 avweb.com##.avweb-home-leader
 avxhm.se##[data-localize]:has(a[href^="https://canv.ai/"])
 avxhome.in##.banner-links
@@ -40103,7 +40104,9 @@ bing.com#$#body .b_adLastChild { display: block !important; position: absolute !
 bing.com#$#body .pa_carousel_mlo { display: block !important; position: absolute !important; top: -9999px !important; }
 bing.com#$#body .pa_sb { display: block !important; position: absolute !important; top: -9999px !important; }
 bing.com#$?#.b_restorableLink { remove: true; }
-bing.com#%#(()=>{const e={apply:(e,t,l)=>{try{const e=l[0];e?.includes(".b_ad")?l[0]="#b_results .b_algo:not([style])":e?.includes(".b_restorableLink")&&(l[0]=".b_algo:not([style])")}catch(e){}return Reflect.apply(e,t,l)}};window.Element.prototype.querySelectorAll=new Proxy(window.Element.prototype.querySelectorAll,e)})();
+bing.com#%#(()=>{const e={apply:(e,t,l)=>{try{const e=l[0];e?.includes(".b_ad")?l[0]="#b_results .b_algo:not([style]):first-child":e?.includes(".b_restorableLink")&&(l[0]=".b_algo:not([style]):first-child")}catch(e){}return Reflect.apply(e,t,l)}};window.Element.prototype.querySelectorAll=new Proxy(window.Element.prototype.querySelectorAll,e)})();
+bing.com#%#(()=>{const e={apply:(e,t,n)=>{const o=Reflect.apply(e,t,n);try{o instanceof HTMLIFrameElement&&""===o.src&&o.contentWindow&&(o.contentWindow.Element.prototype.querySelectorAll=window.Element.prototype.querySelectorAll)}catch(e){}return o}};Node.prototype.appendChild=new Proxy(Node.prototype.appendChild,e)})();
+bing.com#%#(()=>{const t=/^.?(Sponsored|广告).?$/,e=new Set,o={apply:(o,n,r)=>{try{const o=r[0];o&&"string"==typeof o&&t.test(o.trim())&&e.add(n.canvas)}catch(t){}return Reflect.apply(o,n,r)}};window.CanvasRenderingContext2D.prototype.fillText=new Proxy(window.CanvasRenderingContext2D.prototype.fillText,o);const n=new Set,r={apply:(t,o,r)=>{try{if(e.has(o)){const e=Reflect.apply(t,o,r);return n.add(e),e}}catch(t){}return Reflect.apply(t,o,r)}};window.HTMLCanvasElement.prototype.toDataURL=new Proxy(window.HTMLCanvasElement.prototype.toDataURL,r);const a={apply:(t,e,o)=>{try{r=o[0],Array.from(n).some((t=>r.includes(t)))&&(o[0]=o[0].replace(/(^\..+?):/,".b_algo:has($1){display:none!important;}$1:"))}catch(t){}var r;return Reflect.apply(t,e,o)}};window.Document.prototype.createTextNode=new Proxy(window.Document.prototype.createTextNode,a)})();
 bing.com#%#(()=>{const t={apply:(t,r,e)=>{try{const t=e[0];t?.matches?.('[class^="b_ad"]')&&(e[0]=document.querySelector("#b_results .b_algo"))}catch(t){}return Reflect.apply(t,r,e)}};window.Array.prototype.push=new Proxy(window.Array.prototype.push,t)})();
 bing.com#%#//scriptlet('hide-in-shadow-dom', 'cs-responsive-card[ad]')
 bing.com#%#//scriptlet('json-prune', 'relatedAds')
@@ -57529,9 +57532,11 @@ justdial.com###gptAds2
 justdial.com###gptAdsDiv
 justetf.com###brokerAd
 justetf.com##.borker-ad
+justetf.com##.etf-ad-row
 justetf.com##.m-sep-l:has(#partnerNewsBox)
 justetf.com##.wAd
 justetf.com##div[id^="shadow-teaser-"]:has(div[class="disclaimer mb-1"])
+justetf.com##tr[onclick^="gaW"]
 justfullporn.net##.order-1:has(> .video-block-happy)
 justinweather.com##.top-ad-banner-wrapper
 justjared.com#%#//scriptlet('abort-current-inline-script', 'document.readyState', 'getAttribute("abp")')
@@ -75165,6 +75170,7 @@ taoguba.com.cn##.ct_app
 taotu.org##a[href="/jbb"]
 taotu.org,catchv.fooish.com###ad
 taoziba.cc##.vddb2 + a
+tap-coin.de##.dracoinbox
 tap.az###js-lotriver-top-banner
 tapahtumat.iijokiseutu.fi,tapahtumat.kaleva.fi,tapahtumat.koillissanomat.fi,tapahtumat.lapinkansa.fi,tapahtumat.pyhajokiseutu.fi,tapahtumat.raahenseutu.fi,tapahtumat.rantalakeus.fi,tapahtumat.siikajokilaakso.fi#@#.ad-popup
 tapatalk.com###TapatalkFooterDesktopAds
@@ -86674,6 +86680,7 @@ zzzyk.com###Tinfo
 ||avtosfer.az/banner240x
 ||avtosfer.az/upload/banner/
 ||avvenire.it/content/js/track.es5.min.js?
+||avweb.com/wp-content/plugins/advanced-ads-pro/modules/extended-adblocker/
 ||awasrqp.xyz^$popup
 ||awe.sm/conversions/
 ||aweber.com/form/displays.htm?$image
@@ -93403,6 +93410,7 @@ zzzyk.com###Tinfo
 ||kygso.com/js/lrtk.js
 ||l-host.net/etn/omnilog?
 ||l-tike.com/akam/$script
+||l.euronews.com/sdk.js
 ||l.usaa.com/e/v1/
 ||l2.io^$third-party
 ||l2j.lt/ads/
@@ -101542,6 +101550,7 @@ zzzyk.com###Tinfo
 ||yanu.qiniudn.com/*x60.
 ||yanu.qiniudn.com/270300.jpg
 ||yaojingweiba.com/inc/
+||yaokanwx.com/tongji/
 ||yaolan.com/ylk.mini.js
 ||yaozh.com/Public/js/widget/dbAdDownload.
 ||yarpp.org/pixels/
