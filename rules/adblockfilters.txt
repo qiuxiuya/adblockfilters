@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260624015000
-! Last modified: 2026/06/24 01:50:00
-! Blocked Filters: 103035
+! Version: 20260624105028
+! Last modified: 2026/06/24 10:50:28
+! Blocked Filters: 103043
 !
 ###AC_ad
 ###AD_160
@@ -26104,6 +26104,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||ams.cdn.arkadiumhosted.com/assets/*/display-ads-f.js
 @@||amsarkadium-a.akamaihd.net/assets/*/arena/heap/advertisements.js$domain=nydailynews.com
 @@||amtonline.com.br^$generichide
+@@||an-sm.naughtycdn.com/js/lti-analytics-*.min.js$domain=members.naughtyamerica.com
 @@||an.facebook.com/v1/instream/vast.xml?placementid=$xmlhttprequest,domain=anime47.com
 @@||an.yandex.ru/mapuid/*?location=*&jsredir=
 @@||an.yandex.ru/system/adfox.js$domain=minsknews.by
@@ -46569,6 +46570,7 @@ down.mdiaload.com##.btn-dow[href*=".html"]
 down.mdiaload.com##.captcha-wrapper + .download-option-btn
 downbank.cn##.speed-downlist
 downbank.cn,greenxf.com###speed-download
+downdetector.com##div[data-service-list-ad]
 downfile.site##img[alt^="Banner"]
 downforeveryoneorjustme.com###asurion
 downforeveryoneorjustme.com###bsa
@@ -58336,6 +58338,7 @@ justthenews.com##.view--breaking-news-sponsored
 justthenews.com##img[width="798"][height="450"]
 justthenews.com,polygon.com##.video
 justwatch.com##.buybox-promotion-row
+justwatch.com##.buybox-selector > div[class="offer-container"]
 justwatch.com##.buybox_international_offers_row__header__icons:has([rel="nofollow sponsored noopener"])
 justwatch.com##.free-trial__container
 justwatch.com##.jw-ad-block
@@ -58343,7 +58346,10 @@ justwatch.com##.offer-container:has(.offer__footnote)
 justwatch.com##.offer-container:has(.promotion-row_container)
 justwatch.com##.offers-grid
 justwatch.com##.offers-list
+justwatch.com##.offers.buybox-selector
 justwatch.com##.promoted-buybox
+justwatch.com##.sponsored-recommendation
+justwatch.com##div[class*="sr-campaign"]
 justwatch.com##publication-block
 justwatch.com#$#.filter__wrapper--fixed { top:50px!important; }
 justwatch.com#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links { display:block!important; }
@@ -75657,6 +75663,7 @@ studytonight.com##.asc-ads
 studytonight.com##.container-fluid > div.center[style^="min-height:"]
 studytonight.com#?##body-content > div.layout_size:has(> div.asc-ads)
 stuff.co.nz##.between-ad-slot
+stuff.co.nz##.header-container
 stuff.co.nz##.min-h-\[133px\]
 stuff.co.nz,thepost.co.nz##.horizontal-ad-slot
 stuff.co.nz,thepost.co.nz,thepress.co.nz,waikatotimes.co.nz##.header-ads-block
@@ -91316,6 +91323,7 @@ zzzyk.com###Tinfo
 ||fastgolbalserver.com^$popup
 ||fastindianporn.com/func.js
 ||fastly-analytics.com^$third-party
+||fastly.com/metrics/gtm/
 ||fastly.net/i?
 ||fastly.net/sp.js
 ||fastmail.com/api/event/
