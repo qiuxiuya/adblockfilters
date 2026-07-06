@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260706010507
-! Last modified: 2026/07/06 01:05:07
-! Blocked Filters: 102755
+! Version: 20260706104540
+! Last modified: 2026/07/06 10:45:40
+! Blocked Filters: 102759
 !
 ###AC_ad
 ###AD_160
@@ -30160,7 +30160,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||intelyvale.com.mx/ads/images/$domain=valesdegasolina.mx
 @@||interfans.org^$generichide
 @@||intuitcdn.net/libs/*/track-star.min.js$script,domain=turbotax.intuit.com
-@@||inven.co.kr/sitebuilder/common/?mode=leftmenu$xmlhttprequest,elemhide,jsinject,extension
 @@||inven.co.kr^$stealth=dpi
 @@||inven.co.kr^$stealth=ip
 @@||inven.com^$stealth=dpi
@@ -70507,6 +70506,7 @@ quackr.io#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 quackr.io#%#window.adsbygoogle = { loaded: !0 };
 quadraphonicquad.com##.adthrive-placeholder-header
 quadraphonicquad.com##.adthrive-placeholder-static-sidebar
+quantpedia.com,wakingtimes.com,ymcinema.com###media_image-2
 quantrimang.com###adsposttop
 quantrimang.com##.adbox
 quark.cn##.ad-wolong-container
@@ -81549,7 +81549,6 @@ waitrose.com##article[data-product-pod-type="sponsored"]
 waitrose.com##div[data-analytics-component-type="internal-promotion"]
 wakefieldexpress.co.uk#?#div[class] > section:has(> div.slab > div.slab__inner > div.dy-editorial-wow)
 wakingtimes.com##[href^="https://www.wendymyersdetox.com/"]
-wakingtimes.com,ymcinema.com###media_image-2
 walbrzyszek.com##.kontener-reklam
 walgreens.com###prod-sponsored
 walgreens.com###searchSponsoredProductContainer
@@ -81574,6 +81573,7 @@ walla.co.il#@%#//scriptlet('ubo-acis.js', 'btoa', 'upManager')
 walla.co.il#@%#//scriptlet('ubo-aopw.js', 'upManager')
 walla.co.il$$script[wildcard="*<=0x0||*new Uint8Array*"][min-length="50000"][max-length="150000"]
 wallapop.com##[class^="search-page_SearchPage__"][class*="Sky__"]
+wallethacks.com###custom_html-18
 walletinvestor.com##.sticky-footer-content
 walletinvestor.com##[href="https://walletinvestor.com/u/gnrATE"]
 wallgif.com###ad_modal
@@ -85486,6 +85486,7 @@ zzzyk.com###Tinfo
 ||159i.com/video/usr/uploads/1-
 ||159i.com/video/usr/uploads/bd/$image
 ||159i.com^*.php|
+||15gifts.com^$third-party
 ||15hn.net/data/content
 ||15min.lt/cached/tgif$~third-party
 ||15tianqi.com^$third-party
@@ -85672,6 +85673,7 @@ zzzyk.com###Tinfo
 ||23qb.com/skin/style
 ||23qb.com/skin/xiu.js
 ||241hs.com/js/jquery.js
+||247-inc.com^$third-party
 ||247ilabs.com^$third-party
 ||249999.xyz^*.gif
 ||24live.com/api/ads
@@ -101375,6 +101377,8 @@ zzzyk.com###Tinfo
 ||walla.co.il/js/walla.js
 ||walla.co.il/p.php
 ||walla.co.il/stats/
+||wallethacks.com/js/t/|
+||wallethacks.com/js/w
 ||walmart.ca/api/bsp/logger
 ||walmart.ca/api/home-page/logger
 ||walmart.ca/api/landing-page/beacon-logger
