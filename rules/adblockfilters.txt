@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260808004950
-! Last modified: 2026/08/08 00:49:50
-! Blocked Filters: 103979
+! Version: 20260808091433
+! Last modified: 2026/08/08 09:14:33
+! Blocked Filters: 103983
 !
 ###AC_ad
 ###AD_160
@@ -15750,6 +15750,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 -729x91-
 -780x90-
 -90mh-gg.
+-970x90-
 -980x60-
 -988x60.
 -ad-manager/$~stylesheet
@@ -33374,6 +33375,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||rockitecn.nohup.it/*/js/*.js$domain=rockit.it
 @@||roland-gazeta.pl^$generichide
 @@||rollbar.com^*/rollbar.min.js$domain=rollingstone.com|variety.com|wwd.com
+@@||rollercoin.com/static/img/referral_160-600.png$image
 @@||romsforever.co^$generichide
 @@||roomlala.*/assets/myspace/myprofile/sponsorship_controller-*.js
 @@||rootzaffiliates.com^$domain=rootzaffiliates.com
@@ -38582,6 +38584,7 @@ ascii-code.com##div[style="min-height: 240px;"]
 ascii.jp#@#.adrect
 asciitohex.com#?#body > .box.zone > .adsbygoogle:upward(1)
 ascopost.com,fermanaghherald.com##.ad-text
+ascopost.com,fermanaghherald.com,sofx.com##.ad-text
 asd.ink,asd.pics,asd.homes##body > center > a[target="_blank"]
 asd.ink,asd.pics,asd.homes##body > div[id][style^="--rdata:"][style*="position: fixed; inset:"][style*="z-index:"]
 asd.ink,asd.pics,asd.homes#$#.main-content-xfs { display: block !important; }
@@ -89306,6 +89309,7 @@ zzzyk.com###Tinfo
 ||btguard.com/images/
 ||btime.com/api/weblog?
 ||btkat.com/style/l.js
+||btmessage.com^$third-party
 ||btmulu.com/assets/*/ad02.gif
 ||btpian.com/static/*960.js
 ||btpian.com/static/wenquan.js
